@@ -1,5 +1,163 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --color-blanco: #fff;
+  --color-encabezado: #ffb835;
+  --color-amarillo-claro: #ffd342;
+  --color--hover: #ffffff4f;
+}
+
+a{
+  text-decoration: none;
+  color: var(--color-blanco);
+}
+
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: ;
+  grid-template-areas: "header";
+}
+
+.veterinaria__encabezado {
+  width: 100%;
+  height: 80px;
+  background-color: var(--color-encabezado);
+  display: flex;
+  align-items: center;
+}
+
+.encabezado__logo {
+  height: 60%;
+}
+
+.encabezado__contenedor {
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navegador__lista {
+  list-style: none;
+  display: flex;
+}
+
+.navegador__link {
+  text-decoration: none;
+  color: var(--color-blanco);
+  font-size: 20px;
+  padding: 15px;
+  margin: 0 20px;
+  border-radius: 5px;
+}
+
+.navegador__link:hover {
+  background-color: var(--color-amarillo-claro);
+}
+
+.encabezado__contenedor-buscador {
+  display: flex;
+  align-items: center;
+  height: 45%;
+  max-width: 350px;
+  box-shadow: 0 10px 13px #0000002e;
+}
+
+.contenedor-buscador__input {
+  border: 0;
+  outline: 0;
+  background-color: var(--color-amarillo-claro);
+  width: 100%;
+  color: var(--color-blanco);
+  height: 100%;
+  padding-left: 10px;
+}
+
+.contenedor-buscador__input::placeholder {
+  color: var(--color-blanco);
+  font-size: 14px;
+}
+
+.contenedor-buscador__lupa-contenedor {
+  height: 100%;
+  width: 35%;
+  background-color: #30c9ce;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lupa-contenedor__imagen-lupa {
+  width: 20px;
+}
+
+.veterinaria__contenedor-grid{
+  display: grid;
+  grid-template-rows: 
+  90vh 80vh 90vh 80vh 90vh 95vh 50vh 100vh 50vh;
+  grid-template-areas: 
+  "inicio"
+  "about"
+  "servicios"
+  "about2"
+  "precios"
+  "personal"
+  "estadisticas"
+  "publicaciones"
+  "footer";
+}
+
+.contenedor-amarillo{
+  background-color: var(--color-amarillo-claro);
+}
+
+.contenedor-blanco{
+  background-color: var(--color-blanco);
+}
+
+.veterinaria__contenedor-inicio{
+  grid-area: inicio;
+}
+
+.veterinaria__contenedor-about{
+  grid-area: about;
+}
+
+.veterinaria__contenedor-servicios{
+  grid-area: servicios;
+}
+
+.veterinaria__contenedor-about--inversa{
+  grid-area: about2;
+}
+
+.veterinaria__contenedor-precios{
+  grid-area: precios;
+}
+
+.veterinaria__contenedor-personal{
+  grid-area: personal;
+}
+
+.veterinaria__contenedor-estadisticas{
+  grid-area: estadisticas;
+}
+
+.veterinaria__contenedor-publicaciones{
+  grid-area: publicaciones;
+}
+
+.veterinaria__footer{
+  grid-area: footer;
+  background-color: #353535;
 }
