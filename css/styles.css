@@ -8,6 +8,12 @@
 }
 
 :root {
+  /* color fondo presentacion */
+  --color-principal: #fcc302; 
+  /* Color header */
+  --color-secundario: #daac00;
+  --color-azul: #00bec9;
+  --color-letras-azul: #a8e2e7;
   --color-blanco: #fff;
   --color-encabezado: #ffb835;
   --color-amarillo-claro: #ffd342;
@@ -117,13 +123,13 @@ a {
 
 .veterinaria__contenedor-grid {
   display: grid;
-  grid-template-rows: 90vh 80vh 90vh 80vh 90vh 95vh 50vh 100vh 50vh;
+  grid-template-rows: 90vh 80vh 90vh 80vh 90vh 95vh 80vh 100vh 50vh;
   grid-template-areas:
     "inicio"
     "about"
     "servicios"
     "about2"
-    "precios"
+    "precios" 
     "personal"
     "estadisticas"
     "publicaciones"
@@ -131,11 +137,13 @@ a {
 }
 
 .tamaño {
-  width: 80%;
+  width: 100%;
+  padding: 0 10%;
   margin: 0 auto;
   display: flex;
   align-items: center;
   height: 100%;
+  gap: 50px;  
 }
 
 .contenedor-amarillo {
@@ -150,7 +158,6 @@ a {
 
 .veterinaria__contenedor-inicio {
   grid-area: inicio;
-  gap: 80px;
 }
 
 .info-contenedor {
@@ -160,10 +167,11 @@ a {
 
 .info-contenedor--letra-negra {
   color: var(--color-negro);
+  width: 55%;
 }
 
 .info-contenedor__titulo {
-  font-size: 65px;
+  font-size: 70px;
   font-weight: 600;
   line-height: 80px;
   margin-bottom: 20px;
@@ -200,13 +208,57 @@ a {
   gap: 20px;
 }
 
-.veterinaria__contenedor-about {
+.veterinaria__contenedor-area-about {
   grid-area: about;
+}
+
+.diseño-video-contenedor{
+  position: relative;
+  width: 506px;
+  height: 480px;
+}
+
+.diseño-video{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#daab0076 50%, #daab0076 50%), url(../img/perro-about.png);
+  z-index: 5;
+}
+
+.diseño-video__imagen-complementaria-contenedor{
+  position: absolute;
+  top: 44%;
+  left: 44%;
+  z-index: 10;
+  width: 70px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-blanco);
+  border-radius: 50%;
+}
+
+.diseño-video__imagen-complementaria{
+  margin-left: 5px;
+  width: 23px;
+  height: 23px;
+}
+
+.diseño-video__cuadrado-amarillo{
+  position: absolute;
+  bottom: -30px;
+  left: -30px;
+  z-index: 1;
 }
 
 .veterinaria__contenedor-servicios {
   grid-area: servicios;
 }
+
 
 .contenedor-grid{
   display: flex;
@@ -295,7 +347,31 @@ a {
 
 
 .veterinaria__contenedor-about--inversa {
+
+.veterinaria__contenedor-about-inverso {
   grid-area: about2;
+  display: flex;
+}
+
+.info-contenedor--end{
+  color: var(--color-negro);
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  text-align: end;
+}
+
+.diseño-video-contenedor .diseño-video__cuadrado-amarillo--posicion-derecha{
+  left: auto;
+  right: -30px;
+}
+
+.diseño-video--imagen-fondo{
+  background-image: linear-gradient(#daab0076 50%, #daab0076 50%), url(../img/imagen-about-inverso.png);
+}
+
+.diseño-video-contenedor--ancho{
+  width: 530px;
 }
 
 .veterinaria__contenedor-precios {
@@ -331,6 +407,9 @@ a {
 
 .veterinaria__contenedor-estadisticas {
   grid-area: estadisticas;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#fcc202b6 100%, #fcc202b6 50%), url(../img/fondo-stats.png);
 }
 
 .veterinaria__contenedor-publicaciones {
