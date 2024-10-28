@@ -12,22 +12,17 @@
   --color-encabezado: #ffb835;
   --color-amarillo-claro: #ffd342;
   --color--hover: #ffffff4f;
+  --color-negro: #000;
 }
 
-a{
+a {
   text-decoration: none;
   color: var(--color-blanco);
 }
 
-.contenedor-grid {
-  display: grid;
-  grid-template-columns: ;
-  grid-template-areas: "header";
-}
-
 .veterinaria__encabezado {
   width: 100%;
-  height: 80px;
+  height: 100px;
   background-color: var(--color-encabezado);
   display: flex;
   align-items: center;
@@ -47,17 +42,29 @@ a{
   justify-content: space-between;
 }
 
+.encabezado__navegador {
+  width: 100%;
+  max-width: 600px;
+}
+
 .navegador__lista {
   list-style: none;
   display: flex;
 }
 
+.navegador__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 0 10px;
+}
+
 .navegador__link {
   text-decoration: none;
   color: var(--color-blanco);
-  font-size: 20px;
+  font-size: 25px;
   padding: 15px;
-  margin: 0 20px;
   border-radius: 5px;
 }
 
@@ -79,6 +86,7 @@ a{
   outline: 0;
   background-color: var(--color-amarillo-claro);
   width: 100%;
+  min-width: 80px;
   color: var(--color-blanco);
   height: 100%;
   padding-left: 10px;
@@ -91,7 +99,8 @@ a{
 
 .contenedor-buscador__lupa-contenedor {
   height: 100%;
-  width: 30%; 
+  width: 30%;
+  min-width: 40px;
   background-color: #30c9ce;
   display: flex;
   align-items: center;
@@ -102,112 +111,119 @@ a{
   width: 20px;
 }
 
-.veterinaria__contenedor-grid{
+.veterinaria__contenedor-grid {
   display: grid;
-  grid-template-rows: 
-  90vh 80vh 90vh 80vh 90vh 95vh 50vh 100vh 50vh;
-  grid-template-areas: 
-  "inicio"
-  "about"
-  "servicios"
-  "about2"
-  "precios"
-  "personal"
-  "estadisticas"
-  "publicaciones"
-  "footer";
+  grid-template-rows: 90vh 80vh 90vh 80vh 90vh 95vh 50vh 100vh 50vh;
+  grid-template-areas:
+    "inicio"
+    "about"
+    "servicios"
+    "about2"
+    "precios"
+    "personal"
+    "estadisticas"
+    "publicaciones"
+    "footer";
 }
 
-.tamaño{
+.tamaño {
   width: 80%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  height: 100%;
 }
 
-.contenedor-amarillo{
+.contenedor-amarillo {
   background-color: var(--color-amarillo-claro);
 }
 
-.contenedor-blanco{
+.contenedor-blanco {
   background-color: var(--color-blanco);
 }
 
 /* Seccion de inicio */
 
-.veterinaria__contenedor-inicio{
+.veterinaria__contenedor-inicio {
   grid-area: inicio;
-  display: flex;
-  align-items: center;
-  height: 100%;
   gap: 80px;
 }
 
-.contenedor-inicio__info-contenedor{
+.info-contenedor {
   width: 65%;
   color: var(--color-blanco);
 }
 
-.info_contenedor__titulo{
+.info-contenedor--letra-negra {
+  color: var(--color-negro);
+}
+
+.info-contenedor__titulo {
   font-size: 65px;
   font-weight: 600;
   line-height: 80px;
   margin-bottom: 20px;
 }
 
-.info-contenedor__descripcion{
+.info-contenedor__descripcion {
   font-size: 25px;
   margin-bottom: 20px;
 }
 
-.contenedor-inicio__imagen-perro{
+.contenedor-inicio__imagen-perro {
   width: 35%;
 }
 
-.link-boton{
+.link-boton {
   padding: 12px 20px;
   background-color: #30c9ce;
   border-radius: 10px;
 }
 
-.link-boton--fondo-transparente{
+.link-boton--fondo-transparente {
   background-color: transparent;
   border: 1px solid var(--color-blanco);
 }
 
-.info-contenedor__links-contenedor{
+.link-boton--fondo-amarillo {
+  background-color: var(--color-encabezado);
+}
+
+.info-contenedor__links-contenedor {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.veterinaria__contenedor-about{
+.veterinaria__contenedor-about {
   grid-area: about;
 }
 
-.veterinaria__contenedor-servicios{
+.veterinaria__contenedor-servicios {
   grid-area: servicios;
 }
 
-.veterinaria__contenedor-about--inversa{
+.veterinaria__contenedor-about--inversa {
   grid-area: about2;
 }
 
-.veterinaria__contenedor-precios{
+.veterinaria__contenedor-precios {
   grid-area: precios;
 }
 
-.veterinaria__contenedor-personal{
+.veterinaria__contenedor-personal {
   grid-area: personal;
 }
 
-.veterinaria__contenedor-estadisticas{
+.veterinaria__contenedor-estadisticas {
   grid-area: estadisticas;
 }
 
-.veterinaria__contenedor-publicaciones{
+.veterinaria__contenedor-publicaciones {
   grid-area: publicaciones;
 }
 
-.veterinaria__footer{
+.veterinaria__footer {
   grid-area: footer;
   background-color: #353535;
 }
