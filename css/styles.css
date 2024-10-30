@@ -9,7 +9,7 @@
 
 :root {
   /* color fondo presentacion */
-  --color-principal: #fcc302; 
+  --color-principal: #fcc302;
   /* Color header */
   --color-secundario: #daac00;
   --color-azul: #00bec9;
@@ -21,7 +21,7 @@
   --color-negro: #000;
 }
 
-li{
+li {
   list-style: none;
 }
 
@@ -39,7 +39,9 @@ a {
 }
 
 .encabezado__logo {
-  height: 60%;
+  max-width: 230px;
+  width: 100%;
+  height: auto;
 }
 
 .encabezado__contenedor {
@@ -58,16 +60,17 @@ a {
 }
 
 .navegador__lista {
-  list-style: none;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
 }
 
 .navegador__item {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
-  margin: 0 10px;
 }
 
 .navegador__link {
@@ -115,13 +118,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
 }
 
 .lupa-contenedor__imagen-lupa {
   width: 20px;
 }
 
-.veterinaria__contenedor-grid {
+/* .veterinaria__contenedor-grid {
   display: grid;
   grid-template-rows: 90vh 80vh 90vh 80vh 90vh 95vh 80vh 100vh 50vh;
   grid-template-areas:
@@ -129,12 +133,12 @@ a {
     "about"
     "servicios"
     "about2"
-    "precios" 
+    "precios"
     "personal"
     "estadisticas"
     "publicaciones"
     "footer";
-}
+} */
 
 .tamaño {
   width: 100%;
@@ -142,8 +146,8 @@ a {
   margin: 0 auto;
   display: flex;
   align-items: center;
-  height: 100%;
-  gap: 50px;  
+  height: 100vh;
+  gap: 50px;
 }
 
 .contenedor-amarillo {
@@ -212,23 +216,24 @@ a {
   grid-area: about;
 }
 
-.diseño-video-contenedor{
+.diseño-video-contenedor {
   position: relative;
   width: 506px;
   height: 480px;
 }
 
-.diseño-video{
+.diseño-video {
   position: absolute;
-  width: 100%;
+  min-width: 450px;
   height: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: linear-gradient(#daab0076 50%, #daab0076 50%), url(../img/perro-about.png);
+  background-image: linear-gradient(#daab0076 50%, #daab0076 50%),
+    url(../img/perro-about.png);
   z-index: 5;
 }
 
-.diseño-video__imagen-complementaria-contenedor{
+.diseño-video__imagen-complementaria-contenedor {
   position: absolute;
   top: 44%;
   left: 44%;
@@ -242,13 +247,13 @@ a {
   border-radius: 50%;
 }
 
-.diseño-video__imagen-complementaria{
+.diseño-video__imagen-complementaria {
   margin-left: 5px;
   width: 23px;
   height: 23px;
 }
 
-.diseño-video__cuadrado-amarillo{
+.diseño-video__cuadrado-amarillo {
   position: absolute;
   bottom: -30px;
   left: -30px;
@@ -259,8 +264,7 @@ a {
   grid-area: servicios;
 }
 
-
-.contenedor-grid{
+.contenedor-grid {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -268,10 +272,10 @@ a {
   color: #fff;
 }
 
-.contenedor-grid--color-negro{
+.contenedor-grid--color-negro {
   color: #000;
 }
-.contenedor-superior{
+.contenedor-superior {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -279,39 +283,40 @@ a {
   gap: 20px;
 }
 
-.contenedor-superior__titulo{
-  font-size: 50px; 
+.contenedor-superior__titulo {
+  font-size: 50px;
 }
 
-.contenedor-superior__descripcion{
+.contenedor-superior__descripcion {
   font-size: 20px;
+}
+
+.contenedor-servicios__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .contenedor-cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   width: 100%;
-  height: 450px;
-  display: flex;
+  height: auto;
   align-items: center;
   text-align: center;
   justify-content: center;
   gap: 80px;
 }
 
-
-
-.contenedor-servicios__top{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+.contenedor-cards--gap-menor {
+  gap: 30px;
 }
 
-.card{
-  width: 300px;
-  height: 100%;
+.card {
+  /* width: 300px; */
+  /* height: 100%; */
   /* gap: 30px; */
   display: flex;
   flex-direction: column;
@@ -319,41 +324,51 @@ a {
   align-items: center;
 }
 
-.card__img{
+.card__img {
   width: 100%;
 }
 
-.card__contenedor-titulo{
+.card__contenedor-titulo {
   display: flex;
-  justify-content: space-between;
-  margin: 20px 0 10px ;
-  width: 100px;
+  justify-content: center;
+  margin: 20px 0;
+  /* width: 100%; */
 }
 
-.card__titulo{
+.card__img--pequeña {
+  max-width: 100px;
+  margin-bottom: 30px;
+}
+
+.card__titulo {
   font-size: 20px;
   font-weight: 600;
+  margin: 0 15px;
 }
 
-.card__titulo--tachado{
+.card__contenedor-titulo--margin-pequeño {
+  margin: 0;
+}
+
+.card__titulo--tachado {
   text-decoration-line: line-through;
 }
 
-.card .link-boton--radio{
+.card .link-boton--radio {
   margin-top: 10px;
   width: max-content;
   border-radius: 50px;
 }
 
-
 .veterinaria__contenedor-about--inversa {
+}
 
 .veterinaria__contenedor-about-inverso {
   grid-area: about2;
   display: flex;
 }
 
-.info-contenedor--end{
+.info-contenedor--end {
   color: var(--color-negro);
   display: flex;
   flex-direction: column;
@@ -361,16 +376,17 @@ a {
   text-align: end;
 }
 
-.diseño-video-contenedor .diseño-video__cuadrado-amarillo--posicion-derecha{
+.diseño-video-contenedor .diseño-video__cuadrado-amarillo--posicion-derecha {
   left: auto;
   right: -30px;
 }
 
-.diseño-video--imagen-fondo{
-  background-image: linear-gradient(#daab0076 50%, #daab0076 50%), url(../img/imagen-about-inverso.png);
+.diseño-video--imagen-fondo {
+  background-image: linear-gradient(#daab0076 50%, #daab0076 50%),
+    url(../img/imagen-about-inverso.png);
 }
 
-.diseño-video-contenedor--ancho{
+.diseño-video-contenedor--ancho {
   width: 530px;
 }
 
@@ -382,16 +398,17 @@ a {
   grid-area: personal;
 }
 
-.lista-iconos{
+.lista-iconos {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 15px;
   width: 200px;
   height: 40px;
+  margin-top: 15px;
 }
 
-.lista-iconos__link{
+.lista-iconos__link {
   padding: 7px;
   background-color: #ffd342;
   display: flex;
@@ -400,25 +417,77 @@ a {
   border-radius: 50%;
 }
 
-.lista-iconos__icono{
+.lista-iconos__icono {
   /* margin-left: 1px; */
   font-size: 24px;
 }
 
 .veterinaria__contenedor-estadisticas {
-  grid-area: estadisticas;
+  /* grid-area: estadisticas; */
+  height: 70vh;
   background-size: cover;
+  background-position-x: center;
   background-repeat: no-repeat;
-  background-image: linear-gradient(#fcc202b6 100%, #fcc202b6 50%), url(../img/fondo-stats.png);
+  background-image: linear-gradient(#fcc202d5 100%, #fcc202b6 0%),
+    url(../img/fondo-stats.png);
+  color: var(--color-blanco);
+}
+
+.card__texto--grande {
+  font-size: 25px;
 }
 
 .veterinaria__contenedor-publicaciones {
-  grid-area: publicaciones;
+  /* grid-area: publicaciones; */
+  height: 100vh;
 }
 
 .veterinaria__footer {
-  grid-area: footer;
+  /* grid-area: footer; */
   background-color: #353535;
+  height: 40vh;
 }
 
+@media (max-width: 1000px) {
+  .tamaño {
+    padding: 80px 20px;
+    flex-direction: column;
+    height: auto;
+  }
 
+  .contenedor-buscador__input {
+    display: none;
+  }
+
+  .contenedor-cards {
+    grid-template-columns: 342px;
+    grid-template-rows: repeat(3, auto);
+  }
+
+  .contenedor-cards--gap-menor {
+    gap: 80px;
+  }
+
+  .contenedor-buscador__lupa-contenedor {
+    border-radius: 50%;
+  }
+
+  .encabezado__contenedor-buscador {
+    box-shadow: none;
+  }
+
+  .card__img {
+    width: auto;
+    height: 100%;
+  }
+
+  .navegador__link {
+    font-size: 20px;
+  }
+
+  .contenedor-cards--stats {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 40px;
+  }
+}
