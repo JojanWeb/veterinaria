@@ -35,24 +35,50 @@
               </li>
             </ul>
           </nav>
-          <div class="encabezado__contenedor-buscador">
+          <div class="contenedor-buscador">
             <input
               type="text"
-              class="contenedor-buscador__input"
+              class="contenedor-buscador__input contenedor-buscador__input--mediaqueri"
               placeholder="Search..."
             />
-            <div class="contenedor-buscador__lupa-contenedor">
+            <div class="contenedor-buscador__lupa-contenedor contenedor-buscador__lupa-contenedor--radio-mediaqueri">
               <img
                 src="img/Search Button.png"
                 alt=""
                 class="lupa-contenedor__imagen-lupa"
               />
             </div>
+            
+            <label for="menu" class="menu-padre">
+              <i class='encabezado__menu bx bx-menu'></i>
+              <input type="checkbox" id="menu" name="menu">
+              <div class="menu-flotante">
+                <ul class="menu-flotante__lista">
+                  <li class="menu-flotante__item">
+                    <a href="" class="menu-flotante__link">Home</a>
+                    <span>></span>
+                  </li>
+                  <li class="menu-flotante__item">
+                    <a href="" class="menu-flotante__link">About</a>
+                    <span>></span>
+                  </li>
+                  <li class="menu-flotante__item">
+                    <a href="" class="menu-flotante__link">Service</a>
+                    <span>></span>
+                  </li>
+                  <li class="menu-flotante__item">
+                    <a href="" class="menu-flotante__link">Contact</a>
+                    <span>></span>
+                  </li>
+                </ul>
+              </div>
+            </label>
           </div>
+          
         </div>
       </header>
-
-      <div class="veterinaria__contenedor-grid">
+      
+      <div class="veterinaria_contenido">
         <section class="contenedor-amarillo">
           <div class="veterinaria__contenedor-inicio tamaño">
             <div class="info-contenedor">
@@ -121,7 +147,7 @@
                 in some form.
               </p>
             </div>
-            <div class="contenedor-cards">
+            <div class="contenedor-cards ">
               <div class="card">
                 <img class="card__img" src="img/1.png" alt="" />
                 <div class="card__contenedor-titulo">
@@ -161,7 +187,7 @@
               <img
                 src="img/Shape.png"
                 alt=""
-                class="diseño-video__cuadrado-amarillo diseño-video__cuadrado-amarillo--posicion-derecha"
+                class="diseño-video__cuadrado-amarillo-derecha"
               />
               <div class="diseño-video diseño-video--imagen-fondo">
                 <div class="diseño-video__imagen-complementaria-contenedor">
@@ -191,7 +217,7 @@
           </div>
         </section>
         <section class="contenedor-amarillo">
-          <div class="veterinaria__contenedor-servicios contenedor-grid tamaño">
+          <div class="veterinaria__contenedor-precios contenedor-grid tamaño">
             <div class="contenedor-superior">
               <h1 class="contenedor-superior__titulo">Title Here</h1>
               <p class="contenedor-superior__descripcion">
@@ -253,7 +279,7 @@
                   </li>
                   <li class="lista-iconos__item">
                     <a href="#" class="lista-iconos__link">
-                      <i class="bx bxl-instagram lista-iconos__icono"></i>
+                      <i class='bx bxl-facebook lista-iconos__icono' ></i>
                     </a>
                   </li>
                   <li class="lista-iconos__item">
@@ -282,7 +308,7 @@
                   </li>
                   <li class="lista-iconos__item">
                     <a href="#" class="lista-iconos__link">
-                      <i class="bx bxl-instagram lista-iconos__icono"></i>
+                      <i class='bx bxl-facebook lista-iconos__icono' ></i>
                     </a>
                   </li>
                   <li class="lista-iconos__item">
@@ -312,7 +338,7 @@
                   </li>
                   <li class="lista-iconos__item">
                     <a href="#" class="lista-iconos__link">
-                      <i class="bx bxl-instagram lista-iconos__icono"></i>
+                      <i class='bx bxl-facebook lista-iconos__icono' ></i>
                     </a>
                   </li>
                   <li class="lista-iconos__item">
@@ -365,11 +391,159 @@
           </div>
         </section>
         <section
-          class="veterinaria__contenedor-publicaciones contenedor-blanco"
+          class=" contenedor-blanco"
         >
-          <div class="veterinaria__contenedor-publicaciones tamaño"></div>
+          <div class="veterinaria__contenedor-publicaciones tamaño">
+            <div class="contenedor-superior">
+              <h1 class="contenedor-superior__titulo card__contenedor-titulo--margin-reset">Recent Posts</h1>
+              <p class="contenedor-superior__descripcion">
+                Lorem Ipsum available, but the majority have suffered alteration
+                in some form.
+              </p>
+            </div>
+            <div class="contenedor-cards contenedor-cards--gap-menor">
+              <div class="card card--alineacion-izq">
+                <img class="card__img card__img--tamaño" src="img/1.png" alt="" />
+                <div class="card__info">
+                  <div class="card__contenedor-titulo card__contenedor-titulo--margin-reset">
+                    <h3 class="card__titulo card__titulo">As a veterinarian and lover of animals</h3>
+                  </div>
+                  <p class="card__texto card__texto card__texto--color-azul">
+                    FEBRUARY 10,2020
+                  </p>
+                  <p class="card__texto card__texto--margen">
+                    Lorem Ipsum available, but the majority have suffered
+                    alteration in some.
+                  </p>
+                  <a href="#" class="link-boton link-boton--letra-azul"
+                    >Read More+</a
+                  >
+                </div>
+              </div>
+              <div class="card card--alineacion-izq">
+                <img class="card__img card__img--tamaño" src="img/2.png" alt="" />
+                <div class="card__info">
+                  <div class="card__contenedor-titulo card__contenedor-titulo--margin-reset">
+                    <h3 class="card__titulo">As a veterinarian and lover of animals</h3>
+                  </div>
+                  <p class="card__texto card__texto card__texto--color-azul">
+                    FEBRUARY 10,2020
+                  </p>
+                  <p class="card__texto card__texto--margen">
+                    Lorem Ipsum available, but the majority have suffered
+                    alteration in some.
+                  </p>
+                  <a href="#" class="link-boton link-boton--letra-azul"
+                    >Read More+</a
+                  >
+                </div>
+              </div>
+              <div class="card card--alineacion-izq">
+                <img class="card__img card__img--tamaño" src="img/3.png" alt="" />
+                <div class="card__info">
+                  <div class="card__contenedor-titulo card__contenedor-titulo--margin-reset">
+                    <h3 class="card__titulo">As a veterinarian and lover of animals</h3>
+                  </div>
+                  <p class="card__texto card__texto--color-azul">
+                    FEBRUARY 11,2020
+                  </p>
+                  <p class="card__texto card__texto--margen">
+                    Lorem Ipsum available, but the majority have suffered
+                    alteration in some.
+                  </p>
+                  <a href="#" class="link-boton link-boton--letra-azul"
+                    >Read More+</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
         </section>
-        <section class="veterinaria__footer"></section>
+        <footer class="veterinaria__footer">
+          <div class="lista-contenedor">
+            <h3 class="lista-contenedor__titulo">About</h3>
+              <ul class="lista-contenedor__lista">
+                <li class="lista-contenedor__item">
+                  <a href="" class="lista-contenedor__link">History</a>
+                </li>
+                <li class="lista-contenedor__item">
+                  <a href="" class="lista-contenedor__link">Our Team</a>
+                </li>
+                <li class="lista-contenedor__item">
+                  <a href="" class="lista-contenedor__link">Brand Guidelines</a>
+                </li>
+                <li class="lista-contenedor__item">
+                  <a href="" class="lista-contenedor__link">Terms&Condition</a>
+                </li>
+                <li class="lista-contenedor__item">
+                  <a href="" class="lista-contenedor__link">Privacy Policy</a>
+                </li>
+              </ul>
+            </h3>
+          </div>
+
+          <div class="lista-contenedor">
+            <h3 class="lista-contenedor__titulo">Services</h3>
+              <ul class="lista-contenedor__lista">
+                <li class="lista-contenedor__item">
+                  <a href="" class="lista-contenedor__link">How to Order</a>
+                </li>
+                <li class="lista-contenedor__item">
+                  <a href="" class="lista-contenedor__link">Our Product</a>
+                </li>
+                <li class="lista-contenedor__item">
+                  <a href="" class="lista-contenedor__link">Order Status</a>
+                </li>
+                <li class="lista-contenedor__item">
+                  <a href="" class="lista-contenedor__link">Promo</a>
+                </li>
+                <li class="lista-contenedor__item">
+                  <a href="" class="lista-contenedor__link">Payment Method</a>
+                </li>
+              </ul>
+            </h3>
+          </div>
+
+          <div class="footer__redes-contenedor">
+            <h3 class="redes-contenedor__titulo">Title Here</h3>
+            <p class="contenedor__texto">Lorem ipsum dolor sit amet consectetur.</p>
+            <div class="contenedor-buscador contenedor-buscador--tamaño-fijo">
+              <input
+                type="text"
+                class="contenedor-buscador__input"
+              />
+              <div class="contenedor-buscador__lupa-contenedor">
+                <img
+                  src="img/avion.png"
+                  alt=""
+                  class="lupa-contenedor__imagen-lupa"
+                />
+              </div>
+            </div>
+            <ul class="lista-iconos">
+                  <li class="lista-iconos__item">
+                    <a href="#" class="lista-iconos__link lista-iconos__link--fondo-blanco">
+                      <i class="bx bxl-instagram lista-iconos__icono"></i>
+                    </a>
+                  </li>
+                  <li class="lista-iconos__item">
+                    <a href="#" class="lista-iconos__link lista-iconos__link--fondo-blanco">
+                      <i class='bx bxl-facebook lista-iconos__icono' ></i>
+                    </a>
+                  </li>
+                  <li class="lista-iconos__item">
+                    <a href="#" class="lista-iconos__link lista-iconos__link--fondo-blanco">
+                      <i class="bx bxl-twitter lista-iconos__icono"></i>
+                    </a>
+                  </li>
+                  <li class="lista-iconos__item">
+                    <a href="#" class="lista-iconos__link lista-iconos__link--fondo-blanco">
+                      <i class="bx bxl-whatsapp lista-iconos__icono"></i>
+                    </a>
+                  </li>
+                </ul>
+          </div>
+        </footer>
       </div>
     </div>
   </body>
