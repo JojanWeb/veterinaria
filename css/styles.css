@@ -31,8 +31,8 @@ a {
 }
 
 .veterinaria__encabezado {
-  width: 100%;
   height: 100px;
+  width: 100vw;
   background-color: var(--color-secundario);
   display: flex;
   align-items: center;
@@ -94,7 +94,7 @@ a {
   align-items: center;
   height: 45%;
   max-width: 250px;
-  width: 100%;
+  /* width: auto; */
   box-shadow: 0 10px 13px #0000002e;
   flex-grow: 1;
 }
@@ -132,6 +132,7 @@ a {
 
 .veterinaria_contenido {
   padding-top: calc(100px);
+
 }
 
 /* .veterinaria__contenedor-grid {
@@ -173,14 +174,15 @@ a {
   height: 90vh;
 }
 
+
 .info-contenedor {
-  width: 65%;
+  width: 100%;
   color: var(--color-blanco);
 }
 
 .info-contenedor--letra-negra {
   color: var(--color-negro);
-  width: 55%;
+  width: 100%;
 }
 
 .info-contenedor__titulo {
@@ -227,14 +229,18 @@ a {
 
 .diseño-video-contenedor {
   position: relative;
-  width: 506px;
+  max-width: 506px;
+  width: 100%;
   height: 480px;
+  min-height: auto;
+  margin: 0 20px;
 }
 
 .diseño-video {
   position: absolute;
-  min-width: 450px;
   height: 100%;
+  max-width: 506px;
+  width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -415,7 +421,8 @@ a {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  width: 200px;
+  max-width: 200px;
+  width: 100%;
   height: 40px;
   margin-top: 15px;
 }
@@ -513,6 +520,7 @@ a {
   align-items: center;
   color: #fff;
   gap: 10px;
+  padding: 30px 0;
 }
 
 .lista-contenedor__titulo {
@@ -528,6 +536,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: end;
+  
 }
 
 .redes-contenedor__titulo {
@@ -538,7 +547,13 @@ a {
   margin-bottom: 25px;
 }
 
-.contenedor-buscador--tamaño-fijo {
+.footer__links-contenedor{
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+.contenedor-buscador--footer {
   flex-grow: 0;
   height: 50px;
   width: 100%;
@@ -640,6 +655,7 @@ a {
 
   .navegador__link {
     font-size: 20px;
+    padding: 8px;
   }
 
   .contenedor-cards--stats {
@@ -649,7 +665,7 @@ a {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .encabezado__logo {
     max-width: 200px;
   }
@@ -668,12 +684,35 @@ a {
     display: none;
   }
 
-  .contenedor-buscador {
+  /* .contenedor-buscador {
     min-width: 60px;
     max-width: 60px;
-  }
+  } */
 
   .menu-padre {
     display: block;
+  }
+
+  .veterinaria__footer{
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: auto;
+  }
+  
+  .footer__redes-contenedor{
+    margin-top: 10px;
+  }
+
+  .tamaño .info-contenedor__titulo{
+    font-size: 50px;
+  }
+
+  .info-contenedor--end{
+    text-align: start;
+  }
+  
+  .contenedor-buscador{
+    min-width: 100px;
+    flex-grow: 0;
   }
 }
