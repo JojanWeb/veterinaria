@@ -1,0 +1,115 @@
+
+
+.veterinaria__encabezado {
+  height: 100px;
+  width: var(--tamaño-ancho);
+  background-color: var(--color-secundario-transparente);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  z-index: 100;
+}
+
+.encabezado__contenedor {
+  width: var(--tamaño-ancho);
+  height: var(--tamaño-alto);
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.encabezado__logo {
+  max-width: 230px;
+  width: var(--tamaño-ancho);
+  height: auto;
+  flex-grow: 1;
+}
+
+.encabezado__navegador {
+  width: var(--tamaño-ancho);
+  max-width: 600px;
+  flex-grow: 2;
+}
+
+.navegador__lista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.navegador__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--tamaño-ancho);
+}
+
+.navegador__link {
+  text-decoration: none;
+  color: var(--color-blanco);
+  font-size: 25px;
+  padding: 15px;
+  border-radius: var(--radio);
+}
+
+.navegador__link:hover {
+  background-color: var(--color-amarillo-claro);
+}
+
+/* Menu desplegable */
+
+.menu-padre {
+  position: relative;
+  display: none;
+}
+
+.encabezado__menu {
+  display: none;
+  visibility: hidden;
+  font-size: 50px;
+  color: #fff;
+  margin-left: 20px;
+}
+
+.menu-flotante {
+  max-height: 0;
+  position: absolute;
+  left: -175px;
+  background-color: var(--color-menu-transparente);
+  width: 200px;
+  color: var(--color-blanco);
+  font-size: var(--tamaño-texto-media-queri);
+  transition: 1s;
+  cursor: pointer;
+  overflow: hidden;
+  min-height: 0;
+}
+
+.menu-flotante__lista {
+  padding: 20px;
+  width: var(--tamaño-ancho);
+  height: var(--tamaño-alto);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.menu-flotante__item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-checkbox {
+  display: none;
+}
+
+.menu-padre input {
+  display: none;
+}
+
+.menu-padre input:checked ~ .menu-flotante {
+  max-height: 200px;
+}
