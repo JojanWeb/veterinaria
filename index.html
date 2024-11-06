@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -19,19 +19,19 @@
           <nav class="encabezado__navegador">
             <ul class="navegador__lista">
               <li class="navegador__item">
-                <a href="#" class="navegador__link">Home</a>
+                <a href="#inicio" class="navegador__link">Home</a>
               </li>
 
               <li class="navegador__item">
-                <a href="#" class="navegador__link">About</a>
+                <a href="#about" class="navegador__link">About</a>
               </li>
 
               <li class="navegador__item">
-                <a href="#" class="navegador__link">Service</a>
+                <a href="#servicios" class="navegador__link">Service</a>
               </li>
 
               <li class="navegador__item">
-                <a href="#" class="navegador__link">Contact</a>
+                <a href="#contacto" class="navegador__link">Contact</a>
               </li>
             </ul>
           </nav>
@@ -55,19 +55,19 @@
               <div class="menu-flotante">
                 <ul class="menu-flotante__lista">
                   <li class="menu-flotante__item">
-                    <a href="" class="menu-flotante__link">Home</a>
+                    <a href="#inicio" class="menu-flotante__link">Home</a>
                     <span>></span>
                   </li>
                   <li class="menu-flotante__item">
-                    <a href="" class="menu-flotante__link">About</a>
+                    <a href="#about" class="menu-flotante__link">About</a>
                     <span>></span>
                   </li>
                   <li class="menu-flotante__item">
-                    <a href="" class="menu-flotante__link">Service</a>
+                    <a href="#servicios" class="menu-flotante__link">Service</a>
                     <span>></span>
                   </li>
                   <li class="menu-flotante__item">
-                    <a href="" class="menu-flotante__link">Contact</a>
+                    <a href="#contacto" class="menu-flotante__link">Contact</a>
                     <span>></span>
                   </li>
                 </ul>
@@ -78,8 +78,8 @@
         </div>
       </header>
       
-      
-        <section class="contenedor-amarillo veterinaria__contenedor-inicio tamaño">
+      <main class="veterinaria__main">
+        <section class="contenedor-amarillo veterinaria__contenedor-inicio tamaño" id="inicio">
 
             <div class="info-contenedor">
               <h3 class="info-contenedor__titulo">
@@ -102,9 +102,9 @@
               class="contenedor-inicio__imagen-perro"
             />
         </section>
-        <section class="contenedor-blanco veterinaria__contenedor-area-about tamaño">
+        <section class="contenedor-blanco veterinaria__contenedor-area-about tamaño" id="about">
 
-            <div class="info-contenedor info-contenedor--letra-negra">
+            <div class="info-contenedor">
               <h3 class="info-contenedor__titulo">
                 As a veterinarian and lover of animals
               </h3>
@@ -136,11 +136,11 @@
               </div>
             </div>
         </section>
-        <section class="contenedor-amarillo veterinaria__contenedor-servicios direccion-column tamaño">
+        <section class="contenedor-amarillo veterinaria__contenedor-servicios direccion-column tamaño" id="servicios">
 
-            <div class="contenedor-superior">
-              <h1 class="contenedor-superior__titulo">Title Here</h1>
-              <p class="contenedor-superior__descripcion">
+            <div class="contenedor-titulo">
+              <h1 class="contenedor-titulo__titulo">Title Here</h1>
+              <p class="contenedor-titulo__descripcion">
                 Lorem Ipsum available, but the majority have suffered alteration
                 in some form.
               </p>
@@ -212,9 +212,9 @@
             </div>
         </section>
         <section class="contenedor-amarillo veterinaria__contenedor-precios direccion-column tamaño">
-            <div class="contenedor-superior">
-              <h1 class="contenedor-superior__titulo">Title Here</h1>
-              <p class="contenedor-superior__descripcion">
+            <div class="contenedor-titulo">
+              <h1 class="contenedor-titulo__titulo">Title Here</h1>
+              <p class="contenedor-titulo__descripcion">
                 Lorem Ipsum available, but the majority have suffered alteration
                 in some form.
               </p>
@@ -223,7 +223,7 @@
               <div class="card">
                 <img class="card__img" src="img/8.png" alt="" />
                 <div class="card__contenedor-titulo">
-                  <h3 class="card__titulo card__titulo--tachado">$50</h3>
+                  <h3 class="card__titulo card__titulo--tachado"> $50</h3>
                   <h3 class="card__titulo card__titulo">$30</h3>
                 </div>
                 <a href="#" class="link-boton link-boton--radio">Contact Us</a>
@@ -247,13 +247,10 @@
             </div>
         </section>
 
-        <section class="contenedor-blanco veterinaria__contenedor-personal direccion-column contenedor-grid--color-negro tamaño">
-          <div
-            class="veterinaria__contenedor-personal direccion-column contenedor-grid--color-negro tamaño"
-          >
-            <div class="contenedor-superior">
-              <h1 class="contenedor-superior__titulo">The vetcare team</h1>
-              <p class="contenedor-superior__descripcion">
+        <section class="contenedor-blanco veterinaria__contenedor-personal direccion-column tamaño" id="contacto">
+            <div class="contenedor-titulo">
+              <h1 class="contenedor-titulo__titulo">Title Here</h1>
+              <p class="contenedor-titulo__descripcion">
                 Lorem Ipsum available, but the majority have suffered alteration
                 in some form.
               </p>
@@ -353,7 +350,6 @@
         <section
           class="contenedor-amarillo veterinaria__contenedor-estadisticas tamaño"
         >
-          <div class="veterinaria__contenedor-estadisticas tamaño">
             <div class="contenedor-cards contenedor-cards--stats">
               <div class="card">
                 <img class="card__img card__img--pequeña" src="img/corazon.png" alt="" />
@@ -387,10 +383,9 @@
         <section
           class=" contenedor-blanco veterinaria__contenedor-publicaciones direccion-column tamaño"
         >
-          <div class="veterinaria__contenedor-publicaciones tamaño">
-            <div class="contenedor-superior">
-              <h1 class="contenedor-superior__titulo card__contenedor-titulo--margin-reset">Recent Posts</h1>
-              <p class="contenedor-superior__descripcion">
+            <div class="contenedor-titulo">
+              <h1 class="contenedor-titulo__titulo">Title Here</h1>
+              <p class="contenedor-titulo__descripcion">
                 Lorem Ipsum available, but the majority have suffered alteration
                 in some form.
               </p>
@@ -452,8 +447,9 @@
               </div>
             </div>
         </section>
+      </main>
 
-        <footer class="veterinaria__footer ">
+      <footer class="veterinaria__footer ">
           <div class="footer__links-contenedor">
             <div class="lista-contenedor">
               <h3 class="lista-contenedor__titulo">About</h3>
@@ -502,7 +498,7 @@
 
           <div class="footer__redes-contenedor">
             <h3 class="redes-contenedor__titulo">Title Here</h3>
-            <p class="contenedor__texto">Lorem ipsum dolor sit amet consectetur.</p>
+            <p class="redes-contenedor__texto">Lorem ipsum dolor sit amet consectetur.</p>
             <div class="contenedor-buscador contenedor-buscador--footer">
               <input
                 type="text"
@@ -540,6 +536,7 @@
                 </ul>
           </div>
         </footer>
+        
     </div>
   </body>
 </html>

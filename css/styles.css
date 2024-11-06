@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 @import url(header.css);
-@import url(inicio.css);
-@import url(about.css);
+@import url(main.css);
+@import url(footer.css);
+@import url(componentes.css);
 
 * {
   padding: 0;
@@ -21,14 +22,22 @@
   --color-secundario-transparente: rgba(218, 172, 0, 0.9);
   --color-menu-transparente: rgba(90, 83, 58, 0.9);
   --color-blanco: #fff;
-  --color-encabezado: #ffb835;
   --color-amarillo-claro: #ffc813;
-  --color--hover: rgba(255, 255, 255, 0.31);
   --color-negro: #000;
   --tamaño-ancho: 100%;
   --tamaño-alto: 100%;
   --tamaño-texto-media-queri: 20px;
   --radio: 10px;
+  --fondo-blanco: #fff;
+  /*  */
+  --titulo-grande: 70px;
+  --titulo-pequeño: 50px;
+  --descripcion-grande: 25px;
+  --descripcion-pequeña: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 li {
@@ -40,193 +49,11 @@ a {
   color: var(--color-blanco);
 }
 
-/* Componentes */
-
-/* Buscador */
-
-.contenedor-buscador {
-  display: flex;
-  align-items: center;
-  height: 45%;
-  max-width: 250px;
-  box-shadow: 0 10px 13px #0000002e;
-  flex-grow: 1;
-}
-
-.contenedor-buscador__input {
-  border: 0;
-  outline: 0;
-  background-color: var(--color-principal);
-  width: var(--tamaño-ancho);
-  min-width: 80px;
-  color: var(--color-blanco);
-  height: var(--tamaño-alto);
-  padding-left: 10px;
-}
-
-.contenedor-buscador__input::placeholder {
-  color: var(--color-blanco);
-  font-size: 14px;
-}
-
-.contenedor-buscador__lupa-contenedor {
-  height: var(--tamaño-alto);
-  max-width: 30%;
-  min-width: 40px;
-  background-color: var(--color-azul);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s;
-}
-
-.lupa-contenedor__imagen-icon {
-  width: 20px;
-}
-
-/* Componente Boton */
-
-.link-boton {
-  padding: 12px 20px;
-  background-color: #30c9ce;
-  border-radius: var(--radio);
-}
-
-.link-boton--fondo-transparente {
-  background-color: transparent;
-  border: 1px solid var(--color-blanco);
-}
-
-/* Componente Titulo */
-
-.info-contenedor__titulo {
-  font-size: 70px;
-  font-weight: 600;
-  line-height: 80px;
-  margin-bottom: 20px;
-}
-
-/* Componente Texto */
-
-.info-contenedor__descripcion {
-  font-size: 25px;
-  margin-bottom: 20px;
-}
-
-/* Componente contenedor de informacion */
-
-.info-contenedor {
-  width: var(--tamaño-ancho);
-  color: var(--color-blanco);
-}
-
-.info-contenedor__links-contenedor {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-/* Modificadores para los About */
-
-.info-contenedor--letra-negra {
-  color: var(--color-negro);
-  width: var(--tamaño-ancho);
-}
-
-.link-boton--fondo-amarillo {
-  background-color: var(--color-encabezado);
-}
-
-/* Componente diseño imagen */
-
-.diseño-video-contenedor {
-  position: relative;
-  max-width: 506px;
-  width: 100%;
-  height: 480px;
-  min-height: auto;
-  margin: 0 20px;
-}
-
-.diseño-video__cuadrado-amarillo {
-  position: absolute;
-  bottom: -30px;
-  left: -30px;
-  z-index: 1;
-}
-
-.diseño-video {
-  position: absolute;
-  height: 100%;
-  max-width: 506px;
-  width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-image: linear-gradient(#daab0076 50%, #daab0076 50%),
-    url(../img/perro-about.png);
-  z-index: 5;
-}
-
-.diseño-video__imagen-complementaria-contenedor {
-  position: absolute;
-  top: 44%;
-  left: 44%;
-  z-index: 10;
-  width: 70px;
-  height: 70px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--color-blanco);
-  border-radius: 50%;
-}
-
-.diseño-video__imagen-complementaria {
-  margin-left: 5px;
-  width: 23px;
-  height: 23px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Estilos generales */
 
 .tamaño {
   width: 100%;
   padding: 100px 4%;
-  margin: 0 auto;
   display: flex;
   align-items: center;
   gap: 50px;
@@ -234,51 +61,12 @@ a {
 
 .contenedor-amarillo {
   background-color: var(--color-principal);
+  color: var(--color-blanco);
 }
 
 .contenedor-blanco {
-  background-color: var(--color-blanco);
-}
-
-/* Seccion de inicio */
-
-.info-contenedor--letra-negra {
+  background-color: var(--fondo-blanco);
   color: var(--color-negro);
-  width: 100%;
-}
-
-.link-boton {
-  padding: 12px 20px;
-  background-color: #30c9ce;
-  border-radius: 10px;
-  /* width: auto; */
-}
-
-.link-boton--fondo-transparente {
-  background-color: transparent;
-  border: 1px solid var(--color-blanco);
-}
-
-.info-contenedor__links-contenedor {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-
-
-.diseño-video-contenedor {
-  position: relative;
-  max-width: 506px;
-  width: 100%;
-  height: 480px;
-  min-height: auto;
-  margin: 0 20px;
-}
-
-
-
-.veterinaria__contenedor-servicios {
-  height: 90vh;
 }
 
 .direccion-column {
@@ -286,288 +74,7 @@ a {
   flex-direction: column;
   justify-content: center;
   gap: 50px;
-  color: #fff;
 }
-
-.contenedor-grid--color-negro {
-  color: #000;
-}
-.contenedor-superior {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.contenedor-superior__titulo {
-  font-size: 50px;
-}
-
-.contenedor-superior__descripcion {
-  font-size: 20px;
-  text-align: center;
-}
-
-.contenedor-servicios__top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
-}
-
-.contenedor-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: 100%;
-  height: auto;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-  gap: 80px;
-}
-
-.contenedor-cards--gap-menor {
-  gap: 30px;
-}
-
-.card {
-  /* width: 300px; */
-  /* height: 100%; */
-  /* gap: 30px; */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.card__img {
-  width: 100%;
-}
-
-.card__contenedor-titulo {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-  /* width: 100%; */
-}
-
-.card__img--pequeña {
-  max-width: 100px;
-  margin-bottom: 30px;
-  cursor: pointer;
-}
-
-.card__titulo {
-  font-size: 20px;
-  font-weight: 600;
-  margin: 0 15px;
-}
-
-.card__contenedor-titulo--margin-pequeño {
-  margin: 0;
-}
-
-.card__titulo--tachado {
-  text-decoration-line: line-through;
-}
-
-.card .link-boton--radio {
-  margin-top: 10px;
-  width: max-content;
-  border-radius: 50px;
-}
-
-.veterinaria__contenedor-about-inverso {
-  height: 80vh;
-  display: flex;
-}
-
-.info-contenedor--end {
-  color: var(--color-negro);
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  text-align: end;
-}
-
-.diseño-video__cuadrado-amarillo-derecha {
-  position: absolute;
-  right: -30px;
-  bottom: -30px;
-}
-
-.diseño-video--imagen-fondo {
-  background-image: linear-gradient(#daab0076 50%, #daab0076 50%),
-    url(../img/imagen-about-inverso.png);
-  min-width: 100%;
-}
-
-.diseño-video-contenedor--ancho {
-  max-width: 530px;
-  width: 100%;
-}
-
-.veterinaria__contenedor-precios {
-  height: 90vh;
-}
-
-.veterinaria__contenedor-personal {
-  height: 95vh;
-}
-
-.lista-iconos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  max-width: 200px;
-  width: 100%;
-  height: 40px;
-  margin-top: 15px;
-}
-
-.lista-iconos__link {
-  padding: 7px;
-  background-color: #ffd342;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
-}
-
-.lista-iconos__icono {
-  /* margin-left: 1px; */
-  font-size: 24px;
-}
-
-.veterinaria__contenedor-estadisticas {
-  /* grid-area: estadisticas; */
-  height: 80vh;
-  background-size: cover;
-  background-position-x: center;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(#fcc202d5 100%, #fcc202b6 0%),
-    url(../img/fondo-stats.png);
-  color: var(--color-blanco);
-}
-
-.card__texto--grande {
-  font-size: 25px;
-}
-
-.veterinaria__contenedor-publicaciones {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 120vh;
-  color: #000;
-}
-
-.link-boton--letra-azul {
-  background-color: transparent;
-  color: var(--color-azul);
-  font-weight: 600;
-  font-size: 18px;
-  padding: 0;
-}
-
-.card--alineacion-izq {
-  align-items: start;
-  justify-content: start;
-  text-align: start;
-  height: auto;
-  max-width: 500px;
-  width: 100%;
-}
-
-.card--alineacion-izq:nth-child(2) {
-  box-shadow: 0 0 30px #cecece;
-}
-
-.card__texto--color-azul {
-  color: var(--color-azul);
-  font-weight: 500;
-}
-
-.card__texto--margen {
-  margin: 15px 0;
-}
-
-.card__info {
-  padding: 20px;
-  flex-grow: 1;
-}
-
-.card__contenedor-titulo--margin-reset {
-  margin: 0;
-}
-
-.card__contenedor-titulo--margin-reset .card__titulo {
-  margin: 4px 0;
-}
-
-.card--alineacion-izq:nth-child(odd) .card__info {
-  border: 3px solid #c2bbbb9a;
-  border-top: 0;
-}
-
-.veterinaria__footer {
-  background-color: #353535;
-  height: 40vh;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  color: #fff;
-  gap: 10px;
-  padding: 30px 4%;
-}
-
-.lista-contenedor__titulo {
-  font-size: 22px;
-  margin-bottom: 10px;
-}
-
-.lista-contenedor__item {
-  margin: 5px 0;
-}
-
-.footer__redes-contenedor {
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  
-}
-
-.redes-contenedor__titulo {
-  font-size: 22px;
-}
-
-.contenedor__texto {
-  margin-bottom: 25px;
-}
-
-.footer__links-contenedor{
-  display: flex;
-  width: 100%;
-  justify-content: space-around;
-}
-
-.contenedor-buscador--footer {
-  flex-grow: 0;
-  height: 50px;
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 20px;
-}
-
-.lista-iconos__link--fondo-blanco {
-  background-color: #fff;
-  color: #444444;
-}
-
 
 @media (max-width: 1000px) {
   .tamaño {
@@ -596,11 +103,6 @@ a {
     box-shadow: none;
   }
 
-  .card__img {
-    width: auto;
-    height: 100%;
-  }
-
   .navegador__link {
     font-size: 20px;
     padding: 8px;
@@ -614,13 +116,13 @@ a {
 }
 
 @media (max-width: 600px) {
-  .encabezado__logo {
-    max-width: 200px;
+  .encabezado__contenedor {
+    max-width: var(--tamaño-ancho);
+    justify-content: space-around;
   }
 
-  .navegador__link {
-    font-size: 16px;
-    padding: 8px;
+  .encabezado__logo {
+    max-width: 200px;
   }
 
   .encabezado__menu {
@@ -632,44 +134,40 @@ a {
     display: none;
   }
 
-  /* .contenedor-buscador {
-    min-width: 60px;
-    max-width: 60px;
-  } */
-
   .menu-padre {
     display: block;
   }
 
-  .veterinaria__footer{
+  .veterinaria__footer {
     flex-direction: column;
     justify-content: space-evenly;
     height: auto;
   }
-  
-  .footer__redes-contenedor{
-    margin-top: 10px;
+
+  .footer__redes-contenedor {
+    margin-top: 20px;
   }
 
-  .tamaño .info-contenedor__titulo{
+  .tamaño .info-contenedor__titulo {
     font-size: 50px;
   }
 
-  .info-contenedor--end{
+  .info-contenedor--end {
     text-align: start;
+    align-items: start;
   }
-  
-  .contenedor-buscador{
+
+  .contenedor-buscador {
     min-width: 100px;
     flex-grow: 0;
   }
 
-  .contenedor-cards--stats{
+  .contenedor-cards--stats {
     grid-template-columns: auto;
     grid-template-rows: repeat(3, 1fr);
   }
 
-  .diseño-video-contenedor--ancho{
+  .diseño-video-contenedor--ancho {
     height: 400px;
     width: 90%;
   }

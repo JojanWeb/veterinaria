@@ -1,0 +1,59 @@
+/* INICIO */
+
+.veterinaria__contenedor-inicio {
+  height: 100vh;
+  padding-top: 100px;
+}
+
+.contenedor-inicio__imagen-perro {
+  width: 100%;
+  max-width: 500px;
+}
+
+/* ABOUT */
+
+.veterinaria__contenedor-area-about {
+  height: 80vh;
+}
+
+/* SERVICIOS */
+
+.veterinaria__contenedor-servicios {
+  height: 90vh;
+}
+
+/* ABOUT INVERSO */
+
+.veterinaria__contenedor-about-inverso {
+  height: 80vh;
+  display: flex;
+}
+
+/* PRECIOS */
+
+.veterinaria__contenedor-precios {
+  height: 90vh;
+}
+
+/* PERSONAL */
+
+.veterinaria__contenedor-personal {
+  height: 95vh;
+}
+
+/* ESTADISTICAS */
+
+.veterinaria__contenedor-estadisticas {
+  height: 60vh;
+  background-size: cover;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  background-image: linear-gradient(#fcc202d5 100%, #fcc202b6 0%),
+    url(../img/fondo-stats.png);
+}
+
+/* PUBLICACIONES */
+
+.veterinaria__contenedor-publicaciones {
+  height: 120vh;
+}
