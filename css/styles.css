@@ -52,11 +52,12 @@ a {
 /* Estilos generales */
 
 .tamaño {
-  width: 100%;
+  width: var(--tamaño-ancho);
   padding: 100px 4%;
   display: flex;
   align-items: center;
   gap: 50px;
+  justify-content: space-evenly;
 }
 
 .contenedor-amarillo {
