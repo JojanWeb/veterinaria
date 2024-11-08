@@ -73,6 +73,12 @@
   margin-left: var(--margen-pequeño);
 }
 
+.encabezado__menu:hover {
+  background-color: var(--color-principal);
+  border-radius: var(--radio-redondo);
+  padding: 2px;
+}
+
 .menu-flotante {
   max-height: 0;
   position: absolute;
@@ -85,6 +91,7 @@
   cursor: pointer;
   overflow: hidden;
   min-height: 0;
+  border-radius: var(--radio);
 }
 
 .menu-flotante__lista {
@@ -99,6 +106,12 @@
 .menu-flotante__item {
   display: flex;
   justify-content: space-between;
+  padding: 4px;
+  border-radius: var(--radio);
+}
+
+.menu-flotante__item:hover {
+  background-color: var(--color-secundario-transparente);
 }
 
 .menu-checkbox {
