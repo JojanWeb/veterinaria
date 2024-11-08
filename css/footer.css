@@ -1,11 +1,10 @@
 .veterinaria__footer {
-  background-color: #353535;
+  background-color: var(--color-fondo-footer);
   height: 30vh;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  color: #fff;
-  gap: 10px;
+  color: var(--color-blanco);
   padding: 30px 4%;
 }
 
@@ -16,12 +15,12 @@
 }
 
 .lista-contenedor__titulo {
-  font-size: 22px;
-  margin-bottom: 10px;
+  font-size: var(--tamaño-fuente-mediano);
+  margin-bottom: var(--margen-pequeño);
 }
 
 .lista-contenedor__item {
-  margin: 5px 0;
+  margin-top: var(--margen-pequeño);
 }
 
 .footer__redes-contenedor {
@@ -33,10 +32,10 @@
 }
 
 .redes-contenedor__titulo {
-  font-size: 22px;
+  font-size: var(--tamaño-fuente-mediano);
 }
 
 .redes-contenedor__texto {
-  margin-bottom: 25px;
+  margin-bottom: var(--margen-media);
   text-align: end;
 }

@@ -6,7 +6,7 @@
 }
 
 .contenedor-inicio__imagen-perro {
-  width: 100%;
+  width: var(--tamaño-ancho);
   max-width: 500px;
 }
 

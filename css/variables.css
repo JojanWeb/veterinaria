@@ -1,0 +1,35 @@
+:root {
+  --color-principal: #fcc302;
+  --color-secundario: #daac00;
+  --color-azul: #00bec9;
+  --color-boton-hover: #00a1aa;
+  --color-boton-transparente-hover: rgb(203, 168, 39);
+
+  --color-fondo-footer: #353535;
+
+  --color-secundario-transparente: rgba(218, 172, 0, 0.9);
+  --color-menu-transparente: rgba(90, 83, 58, 0.9);
+
+  --color-blanco: #fff;
+  --color-negro: #000;
+  --tamaño-ancho: 100%;
+  --tamaño-alto: 100%;
+
+  --radio: 10px;
+  --radio-redondo: 50%;
+
+  --fondo-blanco: #fff;
+
+  --titulo-grande: 70px;
+  --titulo-pequeño: 50px;
+
+  --tamaño-fuente-mediano: 25px;
+  --tamaño-fuente-pequeña: 17px;
+
+  --margen-media: 20px;
+  --margen-pequeño: 10px;
+  --margen-grande: 30px;
+
+  --gap-mediano: 40px;
+  --gap-pequeño: 20px;
+}
