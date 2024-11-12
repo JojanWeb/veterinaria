@@ -72,11 +72,11 @@ a {
     gap: 80px;
   }
 
-  .contenedor-buscador__lupa-contenedor--radio-mediaqueri {
+  .contenedor-buscador__icono-contenedor--radio {
     border-radius: 50%;
   }
 
-  .contenedor-buscador__lupa-contenedor--radio-mediaqueri:hover {
+  .contenedor-buscador__icono-contenedor--radio:hover {
     background-color: var(--color-boton-hover);
   }
 
@@ -106,26 +106,26 @@ a {
     max-width: 200px;
   }
 
-  .encabezado__menu {
+  .menu-contenedor__icono {
     display: block;
     visibility: visible;
   }
 
-  .encabezado__navegador {
+  .navegador {
     display: none;
   }
 
-  .menu-padre {
+  .menu-contenedor {
     display: block;
   }
 
-  .veterinaria__footer {
+  .footer {
     flex-direction: column;
     justify-content: space-evenly;
     height: auto;
   }
 
-  .footer__redes-contenedor {
+  .redes-contenedor {
     margin-top: var(--margen-media);
   }
 
@@ -148,7 +148,7 @@ a {
     grid-template-rows: repeat(3, 1fr);
   }
 
-  .diseño-video-contenedor--ancho {
+  .diseño-video--ancho {
     height: 400px;
     width: 90%;
   }

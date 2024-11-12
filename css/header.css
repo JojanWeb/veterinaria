@@ -1,4 +1,4 @@
-.veterinaria__encabezado {
+.encabezado {
   height: 100px;
   width: var(--tamaño-ancho);
   background-color: var(--color-secundario-transparente);
@@ -26,7 +26,7 @@
   cursor: pointer;
 }
 
-.encabezado__navegador {
+.navegador {
   width: var(--tamaño-ancho);
   max-width: 600px;
   flex-grow: 2;
@@ -60,12 +60,12 @@
 
 /* Menu desplegable */
 
-.menu-padre {
+.menu-contenedor {
   position: relative;
   display: none;
 }
 
-.encabezado__menu {
+.menu-contenedor__icono {
   display: none;
   visibility: hidden;
   font-size: 50px;
@@ -73,7 +73,7 @@
   margin-left: var(--margen-pequeño);
 }
 
-.encabezado__menu:hover {
+.menu-contenedor__icono:hover {
   background-color: var(--color-principal);
   border-radius: var(--radio-redondo);
   padding: 2px;
@@ -118,10 +118,10 @@
   display: none;
 }
 
-.menu-padre input {
+.menu-contenedor input {
   display: none;
 }
 
-.menu-padre input:checked ~ .menu-flotante {
+.menu-contenedor input:checked ~ .menu-flotante {
   max-height: 200px;
 }

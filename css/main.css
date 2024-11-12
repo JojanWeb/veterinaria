@@ -1,49 +1,49 @@
 /* INICIO */
 
-.veterinaria__contenedor-inicio {
+.contenedor-inicio {
   height: 100vh;
   padding-top: 100px;
 }
 
-.contenedor-inicio__imagen-perro {
+.contenedor-inicio__imagen {
   width: var(--tamaño-ancho);
   max-width: 500px;
 }
 
 /* ABOUT */
 
-.veterinaria__contenedor-area-about {
+.contenedor-area-about {
   height: 80vh;
 }
 
 /* SERVICIOS */
 
-.veterinaria__contenedor-servicios {
+.contenedor-servicios {
   height: 90vh;
 }
 
 /* ABOUT INVERSO */
 
-.veterinaria__contenedor-about-inverso {
+.contenedor-about-inverso {
   height: 80vh;
   display: flex;
 }
 
 /* PRECIOS */
 
-.veterinaria__contenedor-precios {
+.contenedor-precios {
   height: 90vh;
 }
 
 /* PERSONAL */
 
-.veterinaria__contenedor-personal {
+.contenedor-personal {
   height: 95vh;
 }
 
 /* ESTADISTICAS */
 
-.veterinaria__contenedor-estadisticas {
+.contenedor-estadisticas {
   height: 60vh;
   background-size: cover;
   background-position-x: center;
@@ -54,6 +54,6 @@
 
 /* PUBLICACIONES */
 
-.veterinaria__contenedor-publicaciones {
+.contenedor-publicaciones {
   height: 120vh;
 }

@@ -13,10 +13,10 @@
 
   <body>
     <div class="veterinaria">
-      <header class="veterinaria__encabezado">
+      <header class="encabezado">
         <div class="encabezado__contenedor">
           <img src="img/logo.png" alt="" class="encabezado__logo" />
-          <nav class="encabezado__navegador">
+          <nav class="navegador">
             <ul class="navegador__lista">
               <li class="navegador__item">
                 <a href="#inicio" class="navegador__link">Home</a>
@@ -41,16 +41,16 @@
               class="contenedor-buscador__input contenedor-buscador__input--mediaqueri"
               placeholder="Search..."
             />
-            <div class="contenedor-buscador__lupa-contenedor contenedor-buscador__lupa-contenedor--radio-mediaqueri">
+            <div class="contenedor-buscador__icono-contenedor contenedor-buscador__icono-contenedor--radio">
               <img
                 src="img/Search Button.png"
                 alt=""
-                class="lupa-contenedor__imagen-icon"
+                class="contenedor-buscador__icono"
               />
             </div>
             
-            <label for="menu" class="menu-padre">
-              <i class='encabezado__menu bx bx-menu'></i>
+            <label for="menu" class="menu-contenedor">
+              <i class='menu-contenedor__icono bx bx-menu'></i>
               <input type="checkbox" id="menu" name="menu">
               <div class="menu-flotante">
                 <ul class="menu-flotante__lista">
@@ -79,7 +79,7 @@
       </header>
       
       <main class="veterinaria__main">
-        <section class="contenedor-amarillo veterinaria__contenedor-inicio tamaño" id="inicio">
+        <section class="contenedor-amarillo contenedor-inicio tamaño" id="inicio">
 
             <div class="info-contenedor">
               <h3 class="info-contenedor__titulo">
@@ -99,10 +99,10 @@
             <img
               src="img/bulldog-frances.png"
               alt=""
-              class="contenedor-inicio__imagen-perro"
+              class="contenedor-inicio__imagen"
             />
         </section>
-        <section class="contenedor-blanco veterinaria__contenedor-area-about tamaño" id="about">
+        <section class="contenedor-blanco contenedor-area-about tamaño" id="about">
 
             <div class="info-contenedor">
               <h3 class="info-contenedor__titulo">
@@ -119,13 +119,13 @@
               </div>
             </div>
 
-            <div class="diseño-video-contenedor">
+            <div class="diseño-video">
               <img
                 src="img/Shape.png"
                 alt=""
                 class="diseño-video__cuadrado-amarillo"
               />
-              <div class="diseño-video">
+              <div class="diseño-video__fondo">
                 <div class="diseño-video__imagen-complementaria-contenedor">
                   <img
                     src="img/play.png"
@@ -136,7 +136,7 @@
               </div>
             </div>
         </section>
-        <section class="contenedor-amarillo veterinaria__contenedor-servicios direccion-column tamaño" id="servicios">
+        <section class="contenedor-amarillo contenedor-servicios direccion-column tamaño" id="servicios">
 
             <div class="contenedor-titulo">
               <h1 class="contenedor-titulo__titulo">Title Here</h1>
@@ -145,7 +145,7 @@
                 in some form.
               </p>
             </div>
-            <div class="contenedor-cards ">
+            <div class="contenedor-cards">
               <div class="card">
                 <img class="card__img" src="img/1.png" alt="" />
                 <div class="card__contenedor-titulo">
@@ -178,14 +178,14 @@
               </div>
             </div>
         </section>
-        <section class="contenedor-blanco veterinaria__contenedor-about-inverso tamaño">
-            <div class="diseño-video-contenedor diseño-video-contenedor--ancho">
+        <section class="contenedor-blanco contenedor-about-inverso tamaño">
+            <div class="diseño-video diseño-video--ancho">
               <img
                 src="img/Shape.png"
                 alt=""
                 class="diseño-video__cuadrado-amarillo-derecha"
               />
-              <div class="diseño-video diseño-video--imagen-fondo">
+              <div class="diseño-video__fondo diseño-video__fondo--imagen">
                 <div class="diseño-video__imagen-complementaria-contenedor">
                   <img
                     src="img/play.png"
@@ -211,7 +211,7 @@
               </div>
             </div>
         </section>
-        <section class="contenedor-amarillo veterinaria__contenedor-precios direccion-column tamaño">
+        <section class="contenedor-amarillo contenedor-precios direccion-column tamaño">
             <div class="contenedor-titulo">
               <h1 class="contenedor-titulo__titulo">Title Here</h1>
               <p class="contenedor-titulo__descripcion">
@@ -247,7 +247,7 @@
             </div>
         </section>
 
-        <section class="contenedor-blanco veterinaria__contenedor-personal direccion-column tamaño" id="contacto">
+        <section class="contenedor-blanco contenedor-personal direccion-column tamaño" id="contacto">
             <div class="contenedor-titulo">
               <h1 class="contenedor-titulo__titulo">Title Here</h1>
               <p class="contenedor-titulo__descripcion">
@@ -348,7 +348,7 @@
         </section>
 
         <section
-          class="contenedor-amarillo veterinaria__contenedor-estadisticas tamaño"
+          class="contenedor-amarillo contenedor-estadisticas tamaño"
         >
             <div class="contenedor-cards contenedor-cards--stats">
               <div class="card">
@@ -381,7 +381,7 @@
         </section>
 
         <section
-          class=" contenedor-blanco veterinaria__contenedor-publicaciones direccion-column tamaño"
+          class=" contenedor-blanco contenedor-publicaciones direccion-column tamaño"
         >
             <div class="contenedor-titulo">
               <h1 class="contenedor-titulo__titulo">Title Here</h1>
@@ -395,9 +395,9 @@
                 <img class="card__img card__img--tamaño" src="img/1.png" alt="" />
                 <div class="card__info">
                   <div class="card__contenedor-titulo card__contenedor-titulo--margin-reset">
-                    <h3 class="card__titulo card__titulo">As a veterinarian and lover of animals</h3>
+                    <h3 class="card__titulo">As a veterinarian and lover of animals</h3>
                   </div>
-                  <p class="card__texto card__texto card__texto--color-azul">
+                  <p class="card__texto card__texto--color-azul">
                     FEBRUARY 10,2020
                   </p>
                   <p class="card__texto card__texto--margen">
@@ -415,7 +415,7 @@
                   <div class="card__contenedor-titulo card__contenedor-titulo--margin-reset">
                     <h3 class="card__titulo">As a veterinarian and lover of animals</h3>
                   </div>
-                  <p class="card__texto card__texto card__texto--color-azul">
+                  <p class="card__texto card__texto--color-azul">
                     FEBRUARY 10,2020
                   </p>
                   <p class="card__texto card__texto--margen">
@@ -449,7 +449,7 @@
         </section>
       </main>
 
-      <footer class="veterinaria__footer ">
+      <footer class="footer ">
           <div class="footer__links-contenedor">
             <div class="lista-contenedor">
               <h3 class="lista-contenedor__titulo">About</h3>
@@ -496,7 +496,7 @@
             </div>
           </div>
 
-          <div class="footer__redes-contenedor">
+          <div class="redes-contenedor">
             <h3 class="redes-contenedor__titulo">Title Here</h3>
             <p class="redes-contenedor__texto">Lorem ipsum dolor sit amet consectetur.</p>
             <div class="contenedor-buscador contenedor-buscador--footer">
@@ -504,11 +504,11 @@
                 type="text"
                 class="contenedor-buscador__input"
               />
-              <div class="contenedor-buscador__lupa-contenedor">
+              <div class="contenedor-buscador__icono-contenedor">
                 <img
                   src="img/avion.png"
                   alt=""
-                  class="lupa-contenedor__imagen-icon"
+                  class="contenedor-buscador__icono"
                 />
               </div>
             </div>
@@ -536,7 +536,6 @@
                 </ul>
           </div>
         </footer>
-        
     </div>
   </body>
 </html>

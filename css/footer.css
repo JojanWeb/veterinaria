@@ -1,4 +1,4 @@
-.veterinaria__footer {
+.footer {
   background-color: var(--color-fondo-footer);
   height: 30vh;
   display: flex;
@@ -23,7 +23,7 @@
   margin-top: var(--margen-pequeño);
 }
 
-.footer__redes-contenedor {
+.redes-contenedor {
   display: flex;
   flex-direction: column;
   align-items: end;

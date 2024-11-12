@@ -1,6 +1,10 @@
-/* Componentes */
+/* Componentes: 
+Todos los componentes fueron hechos porque se reutilizan o pueden ser reutilizados en un futuro
+*/
 
-/* Buscador */
+/* Buscador:
+Componente que es una barra de busqueda la cual se ubica en el header y en el footer.
+*/
 
 .contenedor-buscador {
   display: flex;
@@ -27,7 +31,7 @@
   font-size: var(--tamaño-fuente-pequeña);
 }
 
-.contenedor-buscador__lupa-contenedor {
+.contenedor-buscador__icono-contenedor {
   height: var(--tamaño-alto);
   max-width: 30%;
   min-width: 40px;
@@ -38,7 +42,7 @@
   transition: 0.5s;
 }
 
-.lupa-contenedor__imagen-icon {
+.contenedor-buscador__icono {
   width: 20px;
 }
 
@@ -52,7 +56,9 @@
   margin-bottom: var(--margen-media);
 }
 
-/* Componente Boton */
+/* Componente Boton: 
+Boton que se usa en varias partes de la pagina
+*/
 
 .link-boton {
   padding: 12px 20px;
@@ -95,7 +101,9 @@
   background-color: transparent;
 }
 
-/* Componente contenedor de informacion */
+/* Componente contenedor de informacion: 
+Se usa en los about, contienen un titulo, descripcion y un boton
+*/
 
 .info-contenedor {
   width: var(--tamaño-ancho);
@@ -129,9 +137,11 @@
   text-align: end;
 }
 
-/* Componente diseño imagen */
+/* Componente diseño imagen: 
 
-.diseño-video-contenedor {
+*/
+
+.diseño-video {
   position: relative;
   max-width: 506px;
   width: var(--tamaño-ancho);
@@ -148,7 +158,7 @@
   z-index: 1;
 }
 
-.diseño-video {
+.diseño-video__fondo {
   position: absolute;
   height: var(--tamaño-alto);
   max-width: 506px;
@@ -191,13 +201,13 @@
 
 /* Modificadores */
 
-.diseño-video--imagen-fondo {
+.diseño-video--imagen {
   background-image: linear-gradient(#daab0076 50%, #daab0076 50%),
     url(../img/imagen-about-inverso.png);
   min-width: var(--tamaño-ancho);
 }
 
-.diseño-video-contenedor--ancho {
+.diseño-video--ancho {
   max-width: 530px;
   width: var(--tamaño-ancho);
 }
