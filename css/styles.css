@@ -53,107 +53,125 @@ a {
   justify-content: center;
 }
 
+/* Estilos para pantallas con un ancho máximo de 1000px */
 @media (max-width: 1000px) {
   .tamaño {
-    flex-direction: column;
-    height: auto;
+    flex-direction: column; /* Cambiar la dirección de los elementos a columna */
+    height: auto; /* Ajustar la altura automáticamente */
   }
 
   .contenedor-buscador__input--mediaqueri {
-    display: none;
+    display: none; /* Ocultar el input del buscador en pantallas pequeñas */
   }
 
   .contenedor-cards {
-    grid-template-columns: 342px;
-    grid-template-rows: repeat(3, auto);
+    grid-template-columns: 342px; /* Configuración de la cuadrícula con una columna de 342px */
+    grid-template-rows: repeat(
+      3,
+      auto
+    ); /* Filas automáticas para 3 elementos */
   }
 
   .contenedor-cards--gap-menor {
-    gap: 80px;
+    gap: 80px; /* Reducir el espacio entre las tarjetas */
   }
 
   .contenedor-buscador__icono-contenedor--radio {
-    border-radius: 50%;
+    border-radius: var(
+      --radio-redondo
+    ); /* Hacer el borde del icono redondeado */
   }
 
   .contenedor-buscador__icono-contenedor--radio:hover {
-    background-color: var(--color-boton-hover);
+    background-color: var(
+      --color-boton-hover
+    ); /* Fondo al pasar el mouse sobre el icono */
   }
 
   .contenedor-buscador {
-    box-shadow: none;
+    box-shadow: none; /* Quitar la sombra del contenedor del buscador */
   }
 
   .navegador__link {
-    font-size: 20px;
-    padding: 8px;
+    font-size: 20px; /* Aumentar el tamaño de la fuente de los enlaces de navegación */
+    padding: 8px; /* Espaciado alrededor del texto */
   }
 
   .contenedor-cards--stats {
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    gap: 40px;
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* Cambiar la disposición de las tarjetas estadísticas a 3 columnas */
+    grid-template-rows: auto; /* Filas automáticas */
+    gap: 40px; /* Espacio entre las tarjetas */
   }
 }
 
+/* Estilos para pantallas con un ancho máximo de 600px */
 @media (max-width: 600px) {
   .encabezado__contenedor {
-    max-width: var(--tamaño-ancho);
-    justify-content: space-around;
+    max-width: var(
+      --tamaño-ancho
+    ); /* Ajustar el ancho del contenedor al tamaño del diseño */
+    justify-content: space-around; /* Distribuir el contenido equitativamente */
   }
 
   .encabezado__logo {
-    max-width: 200px;
+    max-width: 200px; /* Limitar el tamaño del logo */
   }
 
   .menu-contenedor__icono {
-    display: block;
-    visibility: visible;
+    display: block; /* Mostrar el icono del menú en pantallas pequeñas */
+    visibility: visible; /* Hacer visible el icono */
   }
 
   .navegador {
-    display: none;
+    display: none; /* Ocultar el menú de navegación en pantallas pequeñas */
   }
 
   .menu-contenedor {
-    display: block;
+    display: block; /* Mostrar el contenedor del menú en pantallas pequeñas */
   }
 
   .footer {
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: auto;
+    flex-direction: column; /* Cambiar la dirección de los elementos del pie de página a columna */
+    justify-content: space-evenly; /* Espaciar los elementos equitativamente */
+    height: auto; /* Ajustar la altura automáticamente */
   }
 
   .redes-contenedor {
-    margin-top: var(--margen-media);
+    margin-top: var(
+      --margen-media
+    ); /* Agregar margen superior al contenedor de redes sociales */
   }
 
   .tamaño .info-contenedor__titulo {
-    font-size: var(--titulo-pequeño);
+    font-size: var(
+      --titulo-pequeño
+    ); /* Reducir el tamaño del título en pantallas pequeñas */
   }
 
   .info-contenedor--end {
-    text-align: start;
-    align-items: start;
+    text-align: start; /* Alinear el contenido al inicio */
+    align-items: start; /* Alinear los elementos al inicio */
   }
 
   .contenedor-buscador {
-    min-width: 100px;
-    flex-grow: 0;
+    min-width: 100px; /* Reducir el tamaño mínimo del contenedor */
+    flex-grow: 0; /* Evitar que el contenedor crezca */
   }
 
   .contenedor-cards--stats {
-    grid-template-columns: auto;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: auto; /* Cambiar la disposición de las tarjetas estadísticas a una sola columna */
+    grid-template-rows: repeat(3, 1fr); /* Filas automáticas */
   }
 
   .diseño-video {
-    height: 400px;
-    width: 90%;
+    height: 400px; /* Ajustar la altura del video */
+    width: 90%; /* Ajustar el ancho del video */
   }
 
   .diseño-video--ancho {
-    height: 300px;
+    height: 300px; /* Reducir la altura del video con la clase 'diseño-video--ancho' */
   }
 }

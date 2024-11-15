@@ -9,52 +9,66 @@ contiene un input tipo texto y un icono.
 
 .contenedor-buscador {
   display: flex; /* activamos flex-box en el contenedor*/
-  align-items: center;/* alineamos los items al centro */
-  height: 45%;/* damos un lato de 45%*/
-  max-width: 250px;/* damos un alto maximo de 250px */
-  box-shadow: 0 10px 13px #0000002e;/* damos una sombra de 0 horizontal, vertical de 10px y un desenfoque de 13px */
-  flex-grow: 1;/* ocupa el espacio restante */
+  align-items: center; /* alineamos los items al centro */
+  height: 45%; /* damos un lato de 45%*/
+  max-width: 250px; /* damos un alto maximo de 250px */
+  box-shadow: 0 10px 13px #0000002e; /* damos una sombra de 0 horizontal, vertical de 10px y un desenfoque de 13px */
+  flex-grow: 1; /* ocupa el espacio restante */
 }
 
 .contenedor-buscador__input {
-  border: 0;/* resetea los estilos del input tipo texto*/
-  outline: 0;/* elimina el contorno o el borde del elemento*/
-  background-color: var(--color-principal); /* establece el color del fondo del elemento con una varible */
-  width: var(--tamaño-ancho);/* da un ancho al elemento con una variable */
-  min-width: 80px;/* da una ancho minimo de 80 px*/
-  color: var(--color-blanco);/* da un color al texto del elemento con una variable*/
-  height: var(--tamaño-alto);/* da un alto al elemento */
-  padding-left: 10px;/* da un espacio interno al elemento actual */
+  border: 0; /* resetea los estilos del input tipo texto*/
+  outline: 0; /* elimina el contorno o el borde del elemento*/
+  background-color: var(
+    --color-principal
+  ); /* establece el color del fondo del elemento con una varible */
+  width: var(--tamaño-ancho); /* da un ancho al elemento con una variable */
+  min-width: 80px; /* da una ancho minimo de 80 px*/
+  color: var(
+    --color-blanco
+  ); /* da un color al texto del elemento con una variable*/
+  height: var(--tamaño-alto); /* da un alto al elemento */
+  padding-left: 10px; /* da un espacio interno al elemento actual */
 }
 
 .contenedor-buscador__input::placeholder {
-  color: var(--color-blanco);/* da un color al texto del placeholder del elemento de entrada*/
-  font-size: var(--tamaño-fuente-pequeña);/* cambia el tamaño de la fuente del texto */
+  color: var(
+    --color-blanco
+  ); /* da un color al texto del placeholder del elemento de entrada*/
+  font-size: var(
+    --tamaño-fuente-pequeña
+  ); /* cambia el tamaño de la fuente del texto */
 }
 
 .contenedor-buscador__icono-contenedor {
   height: var(--tamaño-alto); /* da una altura al contenedor*/
-  max-width: 30%;/* da un ancho maximo al contenedor*/
-  min-width: 40px;/* da un ancho minimo al contenedor*/
-  background-color: var(--color-azul);/* da un color de fondo al contenedor */
-  display: flex;/* activamos flex-box en este elemento*/
-  align-items: center;/* alineamos al centro a los  elementos hijos del contenedor*/
-  justify-content: center;/* alinea los elementos hijos dentro del contenedor  */
-  transition: 0.5s;/* aplica una transicion al las propiedades del elemento */
+  max-width: 30%; /* da un ancho maximo al contenedor*/
+  min-width: 40px; /* da un ancho minimo al contenedor*/
+  background-color: var(--color-azul); /* da un color de fondo al contenedor */
+  display: flex; /* activamos flex-box en este elemento*/
+  align-items: center; /* alineamos al centro a los  elementos hijos del contenedor*/
+  justify-content: center; /* alinea los elementos hijos dentro del contenedor  */
+  transition: 0.5s; /* aplica una transicion al las propiedades del elemento */
 }
 
 .contenedor-buscador__icono {
-  width: 20px;/* aplica un ancho de 20px al contenedor*/
+  width: 20px; /* aplica un ancho de 20px al contenedor*/
 }
 
 /* Modificadores */
 
 .contenedor-buscador--footer {
-  flex-grow: 0;/* resetea esta propiedad */
-  height: 50px;/* se define un alto de 50px al contenedor*/
-  width: var(--tamaño-ancho);/* se define un ancho con una variable al contenedor */
-  max-width: var(--tamaño-ancho);/* se define un ancho maximo al contenedor con una variable */
-  margin-bottom: var(--margen-media);/* se define un margen hacia abajo al contenedor con una variable*/
+  flex-grow: 0; /* resetea esta propiedad */
+  height: 50px; /* se define un alto de 50px al contenedor*/
+  width: var(
+    --tamaño-ancho
+  ); /* se define un ancho con una variable al contenedor */
+  max-width: var(
+    --tamaño-ancho
+  ); /* se define un ancho maximo al contenedor con una variable */
+  margin-bottom: var(
+    --margen-media
+  ); /* se define un margen hacia abajo al contenedor con una variable*/
 }
 
 /* Componente Boton: 
@@ -62,44 +76,58 @@ Boton que esta hecho con un link que se usa en varias partes de la pagina con di
 */
 
 .link-boton {
-  padding: 12px 20px;/* le establece relleno al boton 12px arriba y abajo y 20px de izquierda a derecha*/
-  background-color: var(--color-azul);/* le coloca un color al fondo del boton con uan variable*/
-  border-radius: var(--radio);/* define la curvatura del boton con la variable*/
+  padding: 12px 20px; /* le establece relleno al boton 12px arriba y abajo y 20px de izquierda a derecha*/
+  background-color: var(
+    --color-azul
+  ); /* le coloca un color al fondo del boton con uan variable*/
+  border-radius: var(
+    --radio
+  ); /* define la curvatura del boton con la variable*/
 }
 
 .link-boton:hover {
-  background-color: var(--color-boton-hover);/* cambia el color del fondo del boton */
+  background-color: var(
+    --color-boton-hover
+  ); /* cambia el color del fondo del boton */
 }
 
 /* Modificadores */
 
 .link-boton--fondo-transparente {
-  background-color: transparent;/* coloca en fondo del boton trasparente */
-  border: 1px solid var(--color-blanco);/* le define un borde al boton de un 1px, grosor de tipo solido y le da el color con una variable*/
+  background-color: transparent; /* coloca en fondo del boton trasparente */
+  border: 1px solid var(--color-blanco); /* le define un borde al boton de un 1px, grosor de tipo solido y le da el color con una variable*/
 }
 
 .link-boton--fondo-transparente:hover {
-  background-color: var(--color-boton-transparente-hover);/* le cambia el color del fondo del boton con una variable usando la pseudo clase hover*/
+  background-color: var(
+    --color-boton-transparente-hover
+  ); /* le cambia el color del fondo del boton con una variable usando la pseudo clase hover*/
 }
 
 .link-boton--fondo-amarillo {
-  background-color: var(--color-principal);/* coloca el fondo del boton con una variable*/
+  background-color: var(
+    --color-principal
+  ); /* coloca el fondo del boton con una variable*/
 }
 
 .link-boton--fondo-amarillo:hover {
-  background-color: var(--color-secundario);/* le cambia el color del fondo del boton con una variable usando la pseudo clase hover*/
+  background-color: var(
+    --color-secundario
+  ); /* le cambia el color del fondo del boton con una variable usando la pseudo clase hover*/
 }
 
 .link-boton--letra-azul {
-  background-color: transparent;/* coloca en fondo del boton trasparente */
-  color: var(--color-azul);/* cambia el color del texto del boton con una variable*/
-  font-weight: 600;/* define el grosor o el peseo del texto del boton en 600 */
-  font-size: 18px;/* define el tamaño del texto del boton a 18px*/
-  padding: 0;/* se define el relleno del boton en 0 osea que no habra espacio adicional*/
+  background-color: transparent; /* coloca en fondo del boton trasparente */
+  color: var(
+    --color-azul
+  ); /* cambia el color del texto del boton con una variable*/
+  font-weight: 600; /* define el grosor o el peseo del texto del boton en 600 */
+  font-size: 18px; /* define el tamaño del texto del boton a 18px*/
+  padding: 0; /* se define el relleno del boton en 0 osea que no habra espacio adicional*/
 }
 
 .link-boton--letra-azul:hover {
-  background-color: transparent;/* le cambia el color del fondo del boton con una variable usando la pseudo clase hover*/
+  background-color: transparent; /* le cambia el color del fondo del boton con una variable usando la pseudo clase hover*/
 }
 
 /* Componente contenedor de informacion: 
@@ -107,35 +135,47 @@ Se usa en los about, contienen un titulo, descripcion y un boton
 */
 
 .info-contenedor {
-  width: var(--tamaño-ancho);/* se define un ancho al contenedor de la informacion */
-  max-width: 900px;/* se le define un ancho maximo al contenedor de la informacion de 900px*/
-  display: flex;/* activamos flex-box en el contenedor*/
-  flex-direction: column;/* cambiamos el flujo de los elementos hijos en en columnas*/
+  width: var(
+    --tamaño-ancho
+  ); /* se define un ancho al contenedor de la informacion */
+  max-width: 900px; /* se le define un ancho maximo al contenedor de la informacion de 900px*/
+  display: flex; /* activamos flex-box en el contenedor*/
+  flex-direction: column; /* cambiamos el flujo de los elementos hijos en en columnas*/
 }
 
 .info-contenedor__titulo {
-  font-size: var(--titulo-grande);/* define el tamaño del texto del titulo con una variable*/
-  font-weight: 600;/* define el grosor o el peseo del texto del titulo en 600 */
-  line-height: 80px;/* ajusta la altura de las lineas de texto del titulo*/
-  margin-bottom: var(--margen-media);/* se define un margen hacia abajo al contenedor del titulo*/
+  font-size: var(
+    --titulo-grande
+  ); /* define el tamaño del texto del titulo con una variable*/
+  font-weight: 600; /* define el grosor o el peseo del texto del titulo en 600 */
+  line-height: 80px; /* ajusta la altura de las lineas de texto del titulo*/
+  margin-bottom: var(
+    --margen-media
+  ); /* se define un margen hacia abajo al contenedor del titulo*/
 }
 
 .info-contenedor__descripcion {
-  font-size: var(--tamaño-fuente-mediano);/* define el tamaño de letra del texto del contenedor de la informacion de la descripcion*/
-  margin-bottom: var(--margen-media);/* se define un margen hacia abajo al contenedor de la informacion de la descripcion*/
+  font-size: var(
+    --tamaño-fuente-mediano
+  ); /* define el tamaño de letra del texto del contenedor de la informacion de la descripcion*/
+  margin-bottom: var(
+    --margen-media
+  ); /* se define un margen hacia abajo al contenedor de la informacion de la descripcion*/
 }
 
 .info-contenedor__links-contenedor {
-  display: flex;/* activamos flex-box en el contenedor*/
-  align-items: center;/* alineamos los items hijos de contenedor hacia el centro*/
-  gap: var(--gap-pequeño);/* definimos los espacion entre los elemnetos hijos dentro del contenedor*/
+  display: flex; /* activamos flex-box en el contenedor*/
+  align-items: center; /* alineamos los items hijos de contenedor hacia el centro*/
+  gap: var(
+    --gap-pequeño
+  ); /* definimos los espacion entre los elemnetos hijos dentro del contenedor*/
 }
 
 /* Modificadores*/
 
 .info-contenedor--end {
-  align-items: end;/* se alinean los items al final del contenedor*/
-  text-align: end;/* se alinea el texto al final del contenedor*/
+  align-items: end; /* se alinean los items al final del contenedor*/
+  text-align: end; /* se alinea el texto al final del contenedor*/
 }
 
 /* Componente diseño imagen: 
@@ -144,46 +184,284 @@ contiene imagenes que son las decoraciones y tiene un contenedor con un fondo de
 */
 
 .diseño-video {
-  position: relative;/* se define el contenedor en posicion relativa para ubicar los elementos hijos con posicion absoluta*/
-  max-width: 506px;/* definimos un ancho maximo del contenedor del video de 506 pixeles*/
-  width: var(--tamaño-ancho);/* definimos un alto al contenedor con una variable */
-  height: 480px;/* definimos un acho de 480px al contenedor*/
-  min-height: auto;/* definomos un alto minimo automatico osea se adapta al tamaño del contenido*/
-  margin: 0 var(--margen-media);/* aplicamos margenes arriba y abajo del contenedor de 0 por lo tanto no habra margenes*/
-  cursor: pointer;/* cambia el cursor a un puntero cuando pasa por encima de este*/
+  position: relative; /* se define el contenedor en posicion relativa para ubicar los elementos hijos con posicion absoluta*/
+  max-width: 506px; /* definimos un ancho maximo del contenedor del video de 506 pixeles*/
+  width: var(
+    --tamaño-ancho
+  ); /* definimos un alto al contenedor con una variable */
+  height: 480px; /* definimos un acho de 480px al contenedor*/
+  min-height: auto; /* definomos un alto minimo automatico osea se adapta al tamaño del contenido*/
+  margin: 0 var(--margen-media); /* aplicamos margenes arriba y abajo del contenedor de 0 por lo tanto no habra margenes*/
+  cursor: pointer; /* cambia el cursor a un puntero cuando pasa por encima de este*/
 }
 
 .diseño-video__cuadrado-amarillo {
-  position: absolute;/* se define posicion absoluta para ubicarlo con respecto al bloque padre que tiene posicion relativa*/
-  bottom: -30px;/* el elemento se sale 30px hacia abajo*/
-  left: -30px;/* el elemento se sale 30px hacia la izquierda*/
-  z-index: 1;/* definimos para que se ubique en el orden deseado*/
+  position: absolute; /* se define posicion absoluta para ubicarlo con respecto al bloque padre que tiene posicion relativa*/
+  bottom: -30px; /* el elemento se sale 30px hacia abajo*/
+  left: -30px; /* el elemento se sale 30px hacia la izquierda*/
+  z-index: 1; /* definimos para que se ubique en el orden deseado*/
 }
 
 .diseño-video__fondo {
-  position: absolute;/* se define posicion absoluta para ubicarlo con respecto al bloque padre que tiene posicion relativa*/
-  height: var(--tamaño-alto);/* definimos un alto al  elemento con una variable*/
-  max-width: 506px;/*  definimos un ancho maximo al elemento de 506 pixeles*/
-  width: var(--tamaño-ancho);/* definimos un alto al elemento con una variable */
-  background-size: cover;/* se define para que cubra todo el contenedor*/
-  background-repeat: no-repeat;/* se define para que la imagen no se repita*/
-  background-position-x: center;/* en el eje x posiciona el fondo en el centro*/
+  position: absolute; /* se define posicion absoluta para ubicarlo con respecto al bloque padre que tiene posicion relativa*/
+  height: var(
+    --tamaño-alto
+  ); /* definimos un alto al  elemento con una variable*/
+  max-width: 506px; /*  definimos un ancho maximo al elemento de 506 pixeles*/
+  width: var(
+    --tamaño-ancho
+  ); /* definimos un alto al elemento con una variable */
+  background-size: cover; /* se define para que cubra todo el contenedor*/
+  background-repeat: no-repeat; /* se define para que la imagen no se repita*/
+  background-position-x: center; /* en el eje x posiciona el fondo en el centro*/
   background-image: linear-gradient(#daab0076 50%, #daab0076 50%),
-    url(../img/perro-about.png);/* el primer valor que es el color se aplicara sobre el segundo que es la imagen*/
-  z-index: 5;/* definimos para que se ubique en el orden deseado*/
+    url(../img/perro-about.png); /* el primer valor que es el color se aplicara sobre el segundo que es la imagen*/
+  z-index: 5; /* definimos para que se ubique en el orden deseado*/
 }
 
 .diseño-video__imagen-complementaria-contenedor {
-  position: absolute;/* se define posicion absoluta para ubicarlo con respecto al elemento padre que tiene posicion relativa*/
-  top: 44%;/* Mueve el elemento hacia abajo hasta el 44% de la altura del contenedor esto lo coloca en el centro del contenedor*/
-  left: 44%;/*Mueve el elemento hacia la derecha hasta el 44% del ancho del contenedor */
-  z-index: 10;/* definimos para que se ubique en el orden deseado*/
-  width: 70px;/* se define una ancho al elemento de 70px*/
-  height: 70px;/* se define una alto al elemento de 70px*/
-  display: flex;/* activamos flex-box en este elemento*/
-  align-items: center;/* alineamos al centro a los  elementos del elemento actual*/
-  justify-content: center;/* centra horizontalmente los elementos hijos dentro del contenedor.*/
-  background-color: var(--color-blanco);/* le coloca un color de fondo al elemento con una variable*/
-  border-radius: var(--radio-redondo);/* define un borde redondeado al contenedor*/
+  position: absolute; /* se define posicion absoluta para ubicarlo con respecto al elemento padre que tiene posicion relativa*/
+  top: 44%; /* Mueve el elemento hacia abajo hasta el 44% de la altura del contenedor esto lo coloca en el centro del contenedor*/
+  left: 44%; /*Mueve el elemento hacia la derecha hasta el 44% del ancho del contenedor */
+  z-index: 10; /* definimos para que se ubique en el orden deseado*/
+  width: 70px; /* se define una ancho al elemento de 70px*/
+  height: 70px; /* se define una alto al elemento de 70px*/
+  display: flex; /* activamos flex-box en este elemento*/
+  align-items: center; /* alineamos al centro a los  elementos del elemento actual*/
+  justify-content: center; /* centra horizontalmente los elementos hijos dentro del contenedor.*/
+  background-color: var(
+    --color-blanco
+  ); /* le coloca un color de fondo al elemento con una variable*/
+  border-radius: var(
+    --radio-redondo
+  ); /* define un borde redondeado al contenedor*/
 }
-/* papa */
+
+.diseño-video__imagen-complementaria {
+  margin-left: 5px; /* Añade un margen de 5px a la izquierda del elemento */
+  width: 23px; /* Establece el ancho del elemento en 23px */
+  height: 23px; /* Establece la altura del elemento en 23px */
+}
+
+/* Clase nueva para dar estilos al decorado invertido */
+
+.diseño-video__cuadrado-amarillo-derecha {
+  position: absolute; /* Posiciona el elemento de manera absoluta respecto al contenedor más cercano con posición relativa */
+  right: -30px; /* Posiciona el elemento 30px a la derecha de su contenedor */
+  bottom: -30px; /* Posiciona el elemento 30px por debajo de su contenedor */
+}
+
+/* Modificadores */
+
+.diseño-video__fondo--imagen {
+  background-image: linear-gradient(#daab0076 50%, #daab0076 50%),
+    url(../img/imagen-about-inverso.png); /* Crea un degradado de color con transparencia y se aplica sobre la imagen de fondo */
+  min-width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho mínimo del fondo utilizando la variable `--tamaño-ancho` */
+}
+
+.diseño-video--ancho {
+  max-width: 530px; /* Establece un ancho máximo de 530px */
+  width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho del elemento con la variable `--tamaño-ancho` */
+}
+
+/* Componente contenedor Cards:
+Es un contenedor que contiene un 1 bloque llamado card repetido 3 veces 
+*/
+
+.contenedor-cards {
+  display: grid; /* Utiliza un diseño de cuadricula (grid) */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Define tres columnas de igual tamaño en el grid */
+  width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho del contenedor con la variable `--tamaño-ancho` */
+  align-items: center; /* Centra los elementos en el eje vertical */
+  text-align: center; /* Centra el texto de los elementos */
+  justify-items: center; /* Centra los elementos a lo largo del eje horizontal */
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  gap: var(
+    --gap-mediano
+  ); /* Establece un espacio mediano entre los elementos */
+}
+
+/* Componente cards:
+Es una tarjeta que contiene una imagen, un titulo y un texto
+*/
+
+.card {
+  width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho de la tarjeta con la variable `--tamaño-ancho` */
+  max-width: 400px; /* Establece un ancho máximo de 400px para la tarjeta */
+  display: flex; /* Utiliza flexbox para ubicar los elementos internos */
+  flex-direction: column; /* Organiza los elementos hijos en una columna */
+  justify-content: center; /* Centra los elementos hijos verticalmente */
+  align-items: center; /* Centra los elementos hijos horizontalmente */
+}
+
+.card__img {
+  width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho de la imagen con la variable `--tamaño-ancho` */
+}
+
+.card__info {
+  padding: 20px; /* Añade un espacio interno de 20px alrededor del contenido */
+  flex-grow: 1; /* Permite que este elemento crezca para llenar el espacio disponible */
+}
+
+.card__contenedor-titulo {
+  display: flex; /* Utiliza flexbox para organizar los elementos hijos */
+  justify-content: center; /* Centra los elementos hijos horizontalmente */
+  margin: var(--margen-media) 0; /* Añade márgenes superior e inferior con la variable `--margen-media` */
+}
+
+.card__titulo {
+  font-size: var(
+    --tamaño-fuente-mediano
+  ); /* Establece el tamaño de la fuente con la variable `--tamaño-fuente-mediano` */
+  font-weight: 600; /* Establece el peso de la fuente en 600 (negrita) */
+  margin: 0 var(--margen-media); /* Establece márgenes izquierdo y derecho con la variable `--margen-media` */
+}
+
+.card__texto {
+  font-size: var(
+    --tamaño-fuente-pequeña
+  ); /* Establece el tamaño de la fuente con la variable `--tamaño-fuente-pequeña` */
+}
+
+/* Modificadores */
+
+.contenedor-cards--gap-menor {
+  gap: var(
+    --gap-mediano
+  ); /* Establece el espacio entre los elementos con la variable `--gap-mediano` */
+}
+
+.card__img--pequeña {
+  max-width: 100px; /* Establece un ancho máximo de 100px para la imagen */
+  margin-bottom: var(
+    --margen-grande
+  ); /* Establece un margen inferior con la variable `--margen-grande` */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
+}
+
+.card__contenedor-titulo--margin-pequeño {
+  margin: 0; /* Elimina el margen del contenedor del título */
+}
+
+.card__titulo--tachado {
+  text-decoration-line: line-through; /* Aplica una línea a través del texto */
+}
+
+.link-boton--radio {
+  margin-top: var(
+    --margen-pequeño
+  ); /* Añade un margen superior con la variable `--margen-pequeño` */
+  width: max-content; /* Establece el ancho según el contenido */
+  border-radius: 50px; /* Redondea los bordes del botón con un radio de 50px */
+}
+
+.card__texto--grande {
+  font-size: var(
+    --tamaño-fuente-mediano
+  ); /* Establece el tamaño de la fuente con la variable `--tamaño-fuente-mediano` */
+}
+
+.card--alineacion-izq {
+  align-items: start; /* Alinea los elementos al principio en el eje vertical */
+  justify-content: start; /* Alinea los elementos al principio en el eje horizontal */
+  text-align: start; /* Alinea el texto al principio */
+  max-width: 500px; /* Establece un ancho máximo de 500px */
+  width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho con la variable `--tamaño-ancho` */
+}
+
+.card--alineacion-izq:nth-child(2) {
+  box-shadow: 0 0 30px #cecece; /* Aplica una sombra a la tarjeta (segundo hijo) */
+}
+
+.card__texto--color-azul {
+  color: var(
+    --color-azul
+  ); /* Establece el color del texto con la variable `--color-azul` */
+  font-weight: 500; /* Establece el peso de la fuente en 500 */
+}
+
+.card__texto--margen {
+  margin: 15px 0; /* Establece márgenes superior e inferior de 15px */
+}
+
+.card__contenedor-titulo--margin-reset {
+  margin: 0; /* Elimina el margen del contenedor del título */
+}
+
+.card__contenedor-titulo--margin-reset .card__titulo {
+  margin: 4px 0; /* Establece márgenes superior e inferior de 4px para el título */
+}
+
+.card--alineacion-izq:nth-child(odd) .card__info {
+  border: 3px solid #c2bbbb9a; /* Aplica un borde a la información de las tarjetas impares */
+  border-top: 0; /* Elimina el borde superior */
+}
+
+/* Componente Contenedor titulo-descripcion: 
+Contiene un titulo y una descripcion, este se usa como un contenedor de informacion para contenedor cards
+*/
+
+.contenedor-titulo {
+  display: flex; /* Utiliza flexbox para organizar los elementos en una fila */
+  flex-direction: column; /* Organiza los elementos hijos en una columna */
+  align-items: center; /* Centra los elementos hijos en el eje vertical */
+  justify-content: center; /* Centra los elementos hijos en el eje horizontal */
+  gap: var(
+    --gap-pequeño
+  ); /* Establece un espacio pequeño entre los elementos */
+}
+
+.contenedor-titulo__titulo {
+  font-size: var(
+    --titulo-pequeño
+  ); /* Establece el tamaño de la fuente con la variable `--titulo-pequeño` */
+}
+
+.contenedor-titulo__descripcion {
+  font-size: var(
+    --tamaño-fuente-mediano
+  ); /* Establece el tamaño de la fuente con la variable `--tamaño-fuente-mediano` */
+  text-align: center; /* Centra el texto */
+}
+
+/* Componente lista de iconos redes-sociales:
+Contiene una lista con iconos con link, de redes sociales
+*/
+
+.lista-iconos {
+  display: flex; /* Utiliza flexbox para organizar los elementos en una fila */
+  align-items: center; /* Centra los elementos en el eje vertical */
+  justify-content: center; /* Centra los elementos en el eje horizontal */
+  gap: var(--gap-pequeño); /* Establece un espacio pequeño entre los iconos */
+  max-width: 200px; /* Establece un ancho máximo de 200px */
+  width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho con la variable `--tamaño-ancho` */
+  height: 40px; /* Establece una altura de 40px */
+  margin-top: var(
+    --margen-media
+  ); /* Añade un margen superior con la variable `--margen-media` */
+}
+
+.lista-iconos__link {
+  padding: 7px; /* Añade un padding de 7px alrededor del enlace */
+  background-color: var(
+    --color-principal
+  ); /* Establece el color de fondo con la variable `--color-principal` */
+  display: flex; /* Utiliza flexbox */
+}

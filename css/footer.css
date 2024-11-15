@@ -10,7 +10,7 @@
 
 .footer__links-contenedor {
   display: flex;
-  width: 100%;
+  width: var(--tamaño-ancho);
   justify-content: space-around;
 }
 
@@ -27,7 +27,7 @@
   display: flex;
   flex-direction: column;
   align-items: end;
-  width: 100%;
+  width: var(--tamaño-ancho);
   max-width: 400px;
 }
 
