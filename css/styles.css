@@ -148,8 +148,12 @@ a {
     grid-template-rows: repeat(3, 1fr);
   }
 
-  .diseño-video--ancho {
+  .diseño-video {
     height: 400px;
     width: 90%;
+  }
+
+  .diseño-video--ancho {
+    height: 300px;
   }
 }

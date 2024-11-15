@@ -35,193 +35,222 @@
 }
 
 .diseño-video__imagen-complementaria {
-  margin-left: 5px;
-  width: 23px;
-  height: 23px;
+  margin-left: 5px; /* Añade un margen de 5px a la izquierda del elemento */
+  width: 23px; /* Establece el ancho del elemento en 23px */
+  height: 23px; /* Establece la altura del elemento en 23px */
 }
 
 /* Clase nueva para dar estilos al decorado invertido */
 
 .diseño-video__cuadrado-amarillo-derecha {
-  position: absolute;
-  right: -30px;
-  bottom: -30px;
+  position: absolute; /* Posiciona el elemento de manera absoluta respecto al contenedor más cercano con posición relativa */
+  right: -30px; /* Posiciona el elemento 30px a la derecha de su contenedor */
+  bottom: -30px; /* Posiciona el elemento 30px por debajo de su contenedor */
 }
 
 /* Modificadores */
 
-.diseño-video--imagen {
+.diseño-video__fondo--imagen {
   background-image: linear-gradient(#daab0076 50%, #daab0076 50%),
-    url(../img/imagen-about-inverso.png);
-  min-width: var(--tamaño-ancho);
+    url(../img/imagen-about-inverso.png); /* Crea un degradado de color con transparencia y se aplica sobre la imagen de fondo */
+  min-width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho mínimo del fondo utilizando la variable `--tamaño-ancho` */
 }
 
 .diseño-video--ancho {
-  max-width: 530px;
-  width: var(--tamaño-ancho);
+  max-width: 530px; /* Establece un ancho máximo de 530px */
+  width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho del elemento con la variable `--tamaño-ancho` */
 }
 
-/* Componente Cards */
+/* Componente contenedor Cards */
 
 .contenedor-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  width: var(--tamaño-ancho);
-  height: auto;
-  align-items: center;
-  text-align: center;
-  justify-items: center;
-  justify-content: center;
-  gap: var(--gap-mediano);
+  display: grid; /* Utiliza un diseño de cuadricula (grid) */
+  grid-template-columns: repeat(
+    3,
+    1fr
+  ); /* Define tres columnas de igual tamaño en el grid */
+  width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho del contenedor con la variable `--tamaño-ancho` */
+  align-items: center; /* Centra los elementos en el eje vertical */
+  text-align: center; /* Centra el texto de los elementos */
+  justify-items: center; /* Centra los elementos a lo largo del eje horizontal */
+  justify-content: center; /* Centra el contenido dentro del contenedor */
+  gap: var(
+    --gap-mediano
+  ); /* Establece un espacio mediano entre los elementos */
 }
 
+/* Componente cards */
+
 .card {
-  width: var(--tamaño-ancho);
-  max-width: 400px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho de la tarjeta con la variable `--tamaño-ancho` */
+  max-width: 400px; /* Establece un ancho máximo de 400px para la tarjeta */
+  display: flex; /* Utiliza flexbox para ubicar los elementos internos */
+  flex-direction: column; /* Organiza los elementos hijos en una columna */
+  justify-content: center; /* Centra los elementos hijos verticalmente */
+  align-items: center; /* Centra los elementos hijos horizontalmente */
 }
 
 .card__img {
-  width: var(--tamaño-ancho);
+  width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho de la imagen con la variable `--tamaño-ancho` */
 }
 
 .card__info {
-  padding: 20px;
-  flex-grow: 1;
+  padding: 20px; /* Añade un espacio interno de 20px alrededor del contenido */
+  flex-grow: 1; /* Permite que este elemento crezca para llenar el espacio disponible */
 }
 
 .card__contenedor-titulo {
-  display: flex;
-  justify-content: center;
-  margin: var(--margen-media) 0;
+  display: flex; /* Utiliza flexbox para organizar los elementos hijos */
+  justify-content: center; /* Centra los elementos hijos horizontalmente */
+  margin: var(--margen-media) 0; /* Añade márgenes superior e inferior con la variable `--margen-media` */
 }
 
 .card__titulo {
-  font-size: var(--tamaño-fuente-mediano);
-  font-weight: 600;
-  margin: 0 var(--margen-media);
+  font-size: var(
+    --tamaño-fuente-mediano
+  ); /* Establece el tamaño de la fuente con la variable `--tamaño-fuente-mediano` */
+  font-weight: 600; /* Establece el peso de la fuente en 600 (negrita) */
+  margin: 0 var(--margen-media); /* Establece márgenes izquierdo y derecho con la variable `--margen-media` */
 }
 
 .card__texto {
-  font-size: var(--tamaño-fuente-pequeña);
+  font-size: var(
+    --tamaño-fuente-pequeña
+  ); /* Establece el tamaño de la fuente con la variable `--tamaño-fuente-pequeña` */
 }
 
 /* Modificadores */
 
 .contenedor-cards--gap-menor {
-  gap: var(--gap-mediano);
+  gap: var(
+    --gap-mediano
+  ); /* Establece el espacio entre los elementos con la variable `--gap-mediano` */
 }
 
 .card__img--pequeña {
-  max-width: 100px;
-  margin-bottom: var(--margen-grande);
-  cursor: pointer;
+  max-width: 100px; /* Establece un ancho máximo de 100px para la imagen */
+  margin-bottom: var(
+    --margen-grande
+  ); /* Establece un margen inferior con la variable `--margen-grande` */
+  cursor: pointer; /* Cambia el cursor a una mano al pasar por encima */
 }
 
 .card__contenedor-titulo--margin-pequeño {
-  margin: 0;
+  margin: 0; /* Elimina el margen del contenedor del título */
 }
 
 .card__titulo--tachado {
-  text-decoration-line: line-through;
+  text-decoration-line: line-through; /* Aplica una línea a través del texto */
 }
 
-.card .link-boton--radio {
-  margin-top: var(--margen-pequeño);
-  width: max-content;
-  border-radius: 50px;
+.link-boton--radio {
+  margin-top: var(
+    --margen-pequeño
+  ); /* Añade un margen superior con la variable `--margen-pequeño` */
+  width: max-content; /* Establece el ancho según el contenido */
+  border-radius: 50px; /* Redondea los bordes del botón con un radio de 50px */
 }
 
 .card__texto--grande {
-  font-size: var(--tamaño-fuente-mediano);
+  font-size: var(
+    --tamaño-fuente-mediano
+  ); /* Establece el tamaño de la fuente con la variable `--tamaño-fuente-mediano` */
 }
 
 .card--alineacion-izq {
-  align-items: start;
-  justify-content: start;
-  text-align: start;
-  height: auto;
-  max-width: 500px;
-  width: var(--tamaño-ancho);
+  align-items: start; /* Alinea los elementos al principio en el eje vertical */
+  justify-content: start; /* Alinea los elementos al principio en el eje horizontal */
+  text-align: start; /* Alinea el texto al principio */
+  max-width: 500px; /* Establece un ancho máximo de 500px */
+  width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho con la variable `--tamaño-ancho` */
 }
 
 .card--alineacion-izq:nth-child(2) {
-  box-shadow: 0 0 30px #cecece;
+  box-shadow: 0 0 30px #cecece; /* Aplica una sombra a la tarjeta (segundo hijo) */
 }
 
 .card__texto--color-azul {
-  color: var(--color-azul);
-  font-weight: 500;
+  color: var(
+    --color-azul
+  ); /* Establece el color del texto con la variable `--color-azul` */
+  font-weight: 500; /* Establece el peso de la fuente en 500 */
 }
 
 .card__texto--margen {
-  margin: 15px 0;
+  margin: 15px 0; /* Establece márgenes superior e inferior de 15px */
 }
 
 .card__contenedor-titulo--margin-reset {
-  margin: 0;
+  margin: 0; /* Elimina el margen del contenedor del título */
 }
 
 .card__contenedor-titulo--margin-reset .card__titulo {
-  margin: 4px 0;
+  margin: 4px 0; /* Establece márgenes superior e inferior de 4px para el título */
 }
 
 .card--alineacion-izq:nth-child(odd) .card__info {
-  border: 3px solid #c2bbbb9a;
-  border-top: 0;
+  border: 3px solid #c2bbbb9a; /* Aplica un borde a la información de las tarjetas impares */
+  border-top: 0; /* Elimina el borde superior */
 }
 
 /* Componente Contenedor titulo-descripcion  */
 
 .contenedor-titulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-pequeño);
+  display: flex; /* Utiliza flexbox para el layout */
+  flex-direction: column; /* Organiza los elementos hijos en una columna */
+  align-items: center; /* Centra los elementos hijos en el eje vertical */
+  justify-content: center; /* Centra los elementos hijos en el eje horizontal */
+  gap: var(
+    --gap-pequeño
+  ); /* Establece un espacio pequeño entre los elementos */
 }
 
 .contenedor-titulo__titulo {
-  font-size: var(--titulo-pequeño);
+  font-size: var(
+    --titulo-pequeño
+  ); /* Establece el tamaño de la fuente con la variable `--titulo-pequeño` */
 }
 
 .contenedor-titulo__descripcion {
-  font-size: var(--tamaño-fuente-mediano);
-  text-align: center;
+  font-size: var(
+    --tamaño-fuente-mediano
+  ); /* Establece el tamaño de la fuente con la variable `--tamaño-fuente-mediano` */
+  text-align: center; /* Centra el texto */
 }
 
 /* Componente lista de iconos redes-sociales */
 
 .lista-iconos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-pequeño);
-  max-width: 200px;
-  width: var(--tamaño-ancho);
-  height: 40px;
-  margin-top: var(--margen-media);
+  display: flex; /* Utiliza flexbox para organizar los elementos en una fila */
+  align-items: center; /* Centra los elementos en el eje vertical */
+  justify-content: center; /* Centra los elementos en el eje horizontal */
+  gap: var(--gap-pequeño); /* Establece un espacio pequeño entre los iconos */
+  max-width: 200px; /* Establece un ancho máximo de 200px */
+  width: var(
+    --tamaño-ancho
+  ); /* Establece el ancho con la variable `--tamaño-ancho` */
+  height: 40px; /* Establece una altura de 40px */
+  margin-top: var(
+    --margen-media
+  ); /* Añade un margen superior con la variable `--margen-media` */
 }
 
 .lista-iconos__link {
-  padding: 7px;
-  background-color: var(--color-principal);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: var(--radio-redondo);
-}
-
-.lista-iconos__icono {
-  font-size: var(--tamaño-fuente-mediano);
-}
-
-/* Modificadores */
-
-.lista-iconos__link--fondo-blanco {
-  background-color: var(--color-blanco);
-  color: #444444;
+  padding: 7px; /* Añade un padding de 7px alrededor del enlace */
+  background-color: var(
+    --color-principal
+  ); /* Establece el color de fondo con la variable `--color-principal` */
+  display: flex; /* Utiliza flexbox */
 }
