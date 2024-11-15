@@ -466,3 +466,18 @@ Contiene una lista con iconos con link, de redes sociales
   display: flex; /* Utiliza flexbox */
   border-radius: var(--radio-redondo); /* Redondea los bordes del icono-link*/
 }
+
+.lista-iconos__icono {
+  font-size: var(
+    --tamaño-fuente-mediano
+  ); /* Establece el tamaño de la fuente usando la variable --tamaño-fuente-mediano */
+}
+
+.lista-iconos__link--fondo-blanco {
+  background-color: var(
+    --color-blanco
+  ); /* Establece el color de fondo con la variable --color-blanco */
+  color: #444444; /* Establece el color del texto en un tono gris oscuro */
+  padding: 7px; /* Añade un padding de 7px alrededor del enlace */
+  display: flex; /* Utiliza flexbox para organizar los elementos en una fila */
+}
