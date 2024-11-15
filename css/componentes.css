@@ -464,4 +464,5 @@ Contiene una lista con iconos con link, de redes sociales
     --color-principal
   ); /* Establece el color de fondo con la variable `--color-principal` */
   display: flex; /* Utiliza flexbox */
+  border-radius: var(--radio-redondo); /* Redondea los bordes del icono-link*/
 }
